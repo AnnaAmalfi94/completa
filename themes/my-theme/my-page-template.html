@@ -1,0 +1,271 @@
+
+<script>
+	
+    $('.material-button-toggle').click(function () {
+        $(this).toggleClass('open');
+        $('.option').toggleClass('scale-on');
+    });
+</script>
+
+
+
+
+
+
+
+<div id="content" class="content list-template">
+    
+	<div class="row" style="padding:5px;">
+         
+         
+                                    <!-- Nav tabs --><div class="">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li style="padding-left:0; padding-right:0; text-align:center;" role="presentation" class="active col-xs-3"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">About</a></li>
+                                        <li style="padding-left:0; padding-right:0; text-align:center;" role="presentation" class="col-xs-3"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Portfolio</a></li>
+                                        <li style="padding-left:0; padding-right:0; text-align:center;" role="presentation" class="col-xs-3"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Skill</a></li>
+                                        <li style="padding-left:0; padding-right:0; text-align:center;" role="presentation" class="col-xs-3"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Contact</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active p20" id="home"> <img class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/header.jpg"> <br> <img class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/website.png"> <h2>static / dynamic / e-commerce</h2> <p><span class="fsi">Realizzo siti web efficaci, creativi e professionali</span><br> Investendo continuamente nella mia formazione, offro servizi sempre migliori.</p> <hr> <h2 class="fs35">Contattami</h2><p>Per maggiori informazioni, per richieste di preventivo e altro, oppure visita il mio sito web: <span class="fsi">www.annaamalfi.it</span></p><div class="col-xs-6"><img class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/numero.png"></div><div class="col-xs-6"><img class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/mail.png"></div><br><br></div>
+                                        <div role="tabpanel" class="tab-pane p20" id="profile"><!-- Card Projects -->
+        <div class="col-md-6 col-md-offset-3">
+            <div class="card">
+                <div class="card-image">
+                    <img class="img-responsive" src="<%= TemplateTags.getThemePath() %>/img/item1.png">
+                    <span class="card-title"></span>
+                </div>
+                
+                <div class="card-content">
+                    <p>Questo è il sito di un allevamento di chow chow, è stato realizzato con wordpress.</p>
+                </div>
+                
+                <div class="card-action">
+                    <a href="http://www.conteadidanstef.it/" target="new_blank">Vai al sito</a>
+                   
+                </div>
+            </div>
+        </div>
+		
+		 <div class="col-md-6 col-md-offset-3">
+            <div class="card">
+                <div class="card-image">
+                    <img class="img-responsive" src="<%= TemplateTags.getThemePath() %>/img/item2.png">
+                    <span class="card-title"></span>
+                </div>
+                
+                <div class="card-content">
+                    <p>Portfolio online di un fotografo, creato anch'esso con wordpress</p>
+                </div>
+                
+                <div class="card-action">
+                    <a href="http://www.maurocangemi.com/" target="new_blank">Vai al sito</a>
+                   
+                </div>
+            </div>
+        </div>
+		
+		
+		 <div class="col-md-6 col-md-offset-3">
+            <div class="card">
+                <div class="card-image">
+                    <img class="img-responsive" src="<%= TemplateTags.getThemePath() %>/img/item3.png">
+                    <span class="card-title"></span>
+                </div>
+                
+                <div class="card-content">
+                    <p>E-commerce di un negozio di elettronica, informatica e antifurti. Realizzato con wordpress.</p>
+                </div>
+                
+                <div class="card-action">
+                    <a href="http://www.elettrosaldi.it/" target="new_blank">Vai al sito</a>
+                   
+                </div>
+            </div>
+        </div>
+		
+		
+		 <div class="col-md-6 col-md-offset-3">
+            <div class="card">
+                <div class="card-image">
+                    <img class="img-responsive" src="<%= TemplateTags.getThemePath() %>/img/item4.png">
+                    <span class="card-title"></span>
+                </div>
+                
+                <div class="card-content">
+                    <p>Questa onepage è il sito vetrina di una gelateria, programmato in html e css.</p>
+                </div>
+                
+                <div class="card-action">
+                    <a href="http://www.gelateriafresco.it/" target="new_blank">Vai al sito</a>
+                   
+                </div>
+            </div>
+        </div>
+		
+		
+		 <div class="col-md-6 col-md-offset-3">
+            <div class="card">
+                <div class="card-image">
+                    <img class="img-responsive" src="<%= TemplateTags.getThemePath() %>/img/item5.png">
+                    <span class="card-title"></span>
+                </div>
+                
+                <div class="card-content">
+                    <p>Sito di un ristorante. É stato creato per metà in html e css, il blog e alcune pagine sono in wordpress</p>
+                </div>
+                
+                <div class="card-action">
+                    <a href="http://www.ostariallatorre.it/" target="new_blank">Vai al sito</a>
+                   
+                </div>
+            </div>
+        </div>
+		<br>
+		<br>
+		<br>
+		</div>
+                                        <div role="tabpanel" class="tab-pane p20" id="messages"><img class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/skill.png"></div>
+                                        <div role="tabpanel" class="tab-pane p20" id="settings"><h2 class="h2-cont">CONTATTAMI</h2><p>Per informazioni su questa applicazione, per richieste di preventivo e altro compila il form sotto oppure contattami via e-mail o telefono (clicca sulle icone).</p><div class="col-xs-6 contatti"><a href="tel:+393345388111"><h2 class="fa fa-phone"></h2><p>+393345388111</p></a></div>  <div class="col-xs-6 contatti"><a href="mailto:annamalfi@gmail.com"><h2 class="fa fa-envelope"></h2><p>info@annaamalfi.it</p></a></div>
+										
+										
+									
+				  <form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
+              <div class="form-group">
+                <div class="controls">
+                  <input type="text" id="name" class="form-control" placeholder="Nome" required data-error="Please enter your name">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="controls">
+                  <input type="email" class="email form-control" id="email" placeholder="Email" required data-error="Please enter your email">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="controls">
+                  <input type="text" id="msg_subject" class="form-control" placeholder="Oggetto" required data-error="Please enter your message subject">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="controls">
+                  <textarea id="message" rows="7" placeholder="Messaggio" class="form-control" required data-error="Write your message"></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>  
+              </div>
+
+              <button type="submit" id="submit" class="btn btn-success"></i> Invia messaggio</button>
+              <div id="msgSubmit" class="h3 text-center hidden"></div> 
+              <div class="clearfix"></div>   
+
+            </form>     
+					
+	
+										
+										
+										
+										</div>
+                                    </div>
+</div>
+
+
+
+  <div class="col-md-4 col-md-offset-4">
+        <div class="material-button-anim">
+          <ul class="list-inline" id="options">
+            <li class="option">
+              <button class="material-button option1" type="button">
+                <a style="color:white;" href="tel:+393345388111"><span class="fa fa-phone" aria-hidden="true"></span></a>
+              </button>
+            </li>
+            <li class="option">
+              <button class="material-button option2" type="button">
+               <a style="color:white;" href="mailto:annamalfi@gmail.com"><span class="fa fa-envelope-o" aria-hidden="true"></span></a>
+              </button>
+            </li>
+            <li class="option">
+              <button class="material-button option3" type="button">
+                <span class="fa fa-pencil" aria-hidden="true"></span>
+              </button>
+            </li>
+          </ul>
+          <button class="material-button material-button-toggle" type="button">
+            <span class="fa fa-plus" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+
+
+
+
+                                </div>
+</div>
+
+
+
+ <script type="text/javascript">
+  
+ $("#contactForm").on("submit", function (event) {
+    if (event.isDefaultPrevented()) {
+        // handle the invalid form...
+        formError();
+        submitMSG(false, "Did you fill in the form properly?");
+    } else {
+        // everything looks good!
+        event.preventDefault();
+        submitForm();
+    }
+});
+
+
+function submitForm(){
+    // Initiate Variables With Form Content
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var msg_subject = $("#msg_subject").val();
+    var message = $("#message").val();
+
+
+    $.ajax({
+        type: "POST",
+        url: "http://www.maurocangemi.com/prova/form-process.php",
+        data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
+        success : function(text){
+            if (text == "success"){
+                formSuccess();
+            } else {
+                formError();
+                submitMSG(false,text);
+            }
+        }
+    });
+}
+
+function formSuccess(){
+    $("#contactForm")[0].reset();
+    submitMSG(true, "Message Submitted!")
+}
+
+function formError(){
+    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $(this).removeClass();
+    });
+}
+
+function submitMSG(valid, msg){
+    if(valid){
+        var msgClasses = "h3 text-center tada animated text-success";
+    } else {
+        var msgClasses = "h3 text-center text-danger";
+    }
+    $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+}
+ 
+ </script>
+ 
+ 
+ 
+   
