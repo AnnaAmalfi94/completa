@@ -1,4 +1,4 @@
-define(['jquery','core/theme-app','core/theme-tpl-tags','core/modules/storage','theme/js/bootstrap.min','theme/js/auth/auth-pages','theme/js/auth/simple-login','theme/js/comments','theme/js/auth/chat-pages'],function($,App,TemplateTags,Storage){
+define(['jquery','core/theme-app','core/theme-tpl-tags','core/modules/storage','theme/js/bootstrap.min','theme/js/auth/auth-pages','theme/js/auth/simple-login','theme/js/comments'],function($,App,TemplateTags,Storage){
    //Your functions.js content here, where :
    // - $ = jQuery
    
