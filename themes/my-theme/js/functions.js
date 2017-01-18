@@ -1,39 +1,6 @@
 define(['jquery','core/theme-app','core/theme-tpl-tags','core/modules/storage','theme/js/bootstrap.min','theme/js/auth/auth-pages','theme/js/auth/simple-login','theme/js/comments'],function($,App,TemplateTags,Storage){
    //Your functions.js content here, where :
-   // - $ = jQuery
-   
-   
-   
-   
-document.addEventListener('deviceready', function () {
-  // Enable to debug issues.
-  // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
-  
-  var notificationOpenedCallback = function(jsonData) {
-    console.log('didReceiveRemoteNotificationCallBack: ' + JSON.stringify(jsonData));
-  };
-  window.plugins.OneSignal.init("74dacbd8-af1e-4d05-aabf-fb85cb2804c7",
-                                 {googleProjectNumber: "905211826236"},
-                                 notificationOpenedCallback);
-  
-  // Show an alert box if a notification comes in when the user is in your app.
-  window.plugins.OneSignal.enableInAppAlertNotification(true);
-}, false);
-
-		
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+   // - $ =  
    
    
    // - the theme-app core module is accessed through "App"
