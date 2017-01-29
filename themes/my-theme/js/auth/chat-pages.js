@@ -27,6 +27,7 @@ define( [ 'jquery', 'core/theme-app', 'core/modules/authentication' ], function(
 		if ( queried_screen.item_id == 'chat' ) {
 			var user = Auth.getCurrentUser();
 			if ( !user ) {
+				alert('devi loggarti per accedere alla chat');
 				App.navigate( '#' );
 				redirect = true;
 			}
