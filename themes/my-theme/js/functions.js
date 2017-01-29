@@ -1,6 +1,12 @@
 define(['jquery','core/theme-app','core/theme-tpl-tags','core/modules/storage','theme/js/bootstrap.min','theme/js/auth/auth-pages','theme/js/auth/simple-login','theme/js/comments','theme/js/auth/chat-pages'],function($,App,TemplateTags,Storage){
    //Your functions.js content here, where :
-   // - $ =  
+   // - $ = jQuery
+   
+   
+   
+   
+   
+   
    
    
    // - the theme-app core module is accessed through "App"
@@ -296,7 +302,7 @@ App.filter( 'template-args', function( template_args, view_type, view_template )
         try {
             cordova.InAppBrowser.open(e.target.href, '_system', 'location=yes');        
         } catch(err) {
-            window.open(e.target.href, '_blank', 'location=yes');
+            window.open(e.target.href, '_system', 'location=yes');
         }
 
     }
