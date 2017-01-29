@@ -47,7 +47,7 @@ define( [ 'jquery', 'core/theme-app', 'core/modules/comments' ], function( $, Ap
 				
 				//Display a happiness message :
 				var message = !comment_data.waiting_approval ? 'Comment added successfully :)' : 'Your comment is awaiting moderation';
-				$( '#feedback' ).removeClass( 'error' ).html( message ).slideDown();
+				$( '#provah' ).removeClass( 'error' ).html( message ).slideDown();
 			},
 			function( error ) {
 				//Reset submit button :
