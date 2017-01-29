@@ -130,7 +130,7 @@ div#hormenu li ul
 
 div#hormenu li ul li
 {
-    padding:0;
+    padding: 3px 10px 3px 3px;
 }
 
 .chicca{
@@ -155,10 +155,17 @@ div#hormenu li ul li
 #utente{
 	color: white;
     margin-top: 10px;
-    font-family: 'tangerine';
-    font-size: 32px;
+    font-family: 'Courgette', cursive;
+    font-size: 19px;
+	
 }
 
+
+#single h1{
+	font-family: 'Courgette', cursive;
+	    font-size: 19px;
+		font-weight:400;
+}
 
 
 .app-screen ul{
@@ -172,16 +179,20 @@ div#hormenu li ul li
 	
 background-image:url('../img/web.png');
 background-repeat: no-repeat;
-padding-left: 20px;
+padding-left: 25px;
 margin-top:10px;
 }
 
 #app-menu li:nth-child(2){
 	background-image:url('../img/social.png');
 	background-repeat: no-repeat;
-padding-left: 20px;
+padding-left: 25px;
+}
 
-
+#app-menu li:nth-child(3){
+	background-image:url('../img/tech.png');
+	background-repeat: no-repeat;
+padding-left: 25px;
 }
 
 
