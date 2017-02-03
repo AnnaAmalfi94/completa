@@ -279,9 +279,57 @@ $(".spaziooo").removeClass('active');
   custom data to the template.
 */
 App.addCustomRoute( 'my-page-route', 'my-page-template' ); 
+ App.addCustomRoute( 'reg', 'reg-template' );
+ App.addCustomRoute( 'faq', 'faq-template' );
 App.filter( 'template-args', function( template_args, view_type, view_template ) { 
 	if( view_template == 'my-page-template' ) {
+		$('#class-search,#refresh-button').css({
+		 "display": "none"    
+	  });
+	  
+		}
+		if( view_template == 'faq-template' ) {
+		$('#class-search,#refresh-button').css({
+		 "display": "none"    
+	  });	
+		}
+		if( view_template == 'login-page' ) {
+		$('#class-search,#refresh-button').css({
+		 "display": "none"    
+	  });	
+		}
+		if( view_template == 'reg-template' ) {
+		$('#class-search,#refresh-button').css({
+		 "display": "none"    
+	  });	
+		}
+		if( view_template == 'single' ) {
+		$('#class-search,#refresh-button').css({
+		 "display": "none"    
+	  });	
+		}
+		if( view_template == 'comments' ) {
+		$('#class-search,#refresh-button').css({
+		 "display": "none"    
+	  });	
+		}
+	
 		
+	return template_args;
+} );
+
+ 
+ 
+ /**
+ display search button and refresh only in archive template
+ */
+ 
+
+App.filter( 'template-args', function( template_args, view_type, view_template ) { 
+	if( view_template == 'archive' ) {
+		$('#class-search,#refresh-button').css({
+		 "display": "block"    
+	  });
 
 		
 		}
@@ -296,8 +344,7 @@ App.filter( 'template-args', function( template_args, view_type, view_template )
  
  
  
- App.addCustomRoute( 'reg', 'reg-template' );
- App.addCustomRoute( 'faq', 'faq-template' );
+
  
  
  
