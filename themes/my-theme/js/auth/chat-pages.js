@@ -49,21 +49,7 @@ define( [ 'jquery', 'core/theme-app', 'core/modules/authentication' ], function(
 		
 		
 		
-		 var $meiu = $( '#meiu' );
-	var $back_button = $( '#go-back' );
-		if ( App.getBackButtonDisplay() ) {
-			
-   // Display iOS back button
-  $meiu.hide();
-			$back_button.show();
 		
-} else {
-			
-    // Display the menu button as iOS back button is not supported
-   $back_button.hide();
-			$meiu.show();
-
-}	
 		
 		
 			var current_user = Auth.getCurrentUser();
