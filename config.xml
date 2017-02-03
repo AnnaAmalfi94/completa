@@ -29,7 +29,7 @@
 	<plugin name="cordova-plugin-customurlscheme" spec="4.2.0" >
 		<param name="URL_SCHEME" value="mygreatapp" />
 	</plugin>
-	
+	<plugin name="nl.x-services.plugins.socialsharing" />
 	<gap:plugin name="onesignal-cordova-plugin" spec="^2.0.10" source="npm" />
 	
 
