@@ -41,6 +41,31 @@ define( [ 'jquery', 'core/theme-app', 'core/modules/authentication' ], function(
 	 */
 	App.filter( 'template-args', function( template_args, view_type, view_template ) { 
 	if( view_template == 'chat-template' ){
+		
+		$('#class-search,#refresh-button').css({
+		 "display": "none"    
+	  });
+		
+		
+		
+		
+		 var $meiu = $( '#meiu' );
+	var $back_button = $( '#go-back' );
+		if ( App.getBackButtonDisplay() ) {
+			
+   // Display iOS back button
+  $meiu.hide();
+			$back_button.show();
+		
+} else {
+			
+    // Display the menu button as iOS back button is not supported
+   $back_button.hide();
+			$meiu.show();
+
+}	
+		
+		
 			var current_user = Auth.getCurrentUser();
 			if ( current_user ) {
 				template_args.user = { 
@@ -54,6 +79,24 @@ define( [ 'jquery', 'core/theme-app', 'core/modules/authentication' ], function(
 	return template_args;
 } );
 	
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
 	
 	
 } );

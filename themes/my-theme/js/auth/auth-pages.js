@@ -40,7 +40,22 @@ define( [ 'jquery', 'core/theme-app', 'core/modules/authentication' ], function(
 	 * user login, role and capabilities.
 	 */
 	App.filter( 'template-args', function( template_args, view_type, view_template ) {
+		
+		
+		
 		if ( view_template == 'user-page' ) {
+			
+			$('#class-search,#refresh-button').css({
+		 "display": "none"    
+	  });
+			
+			
+		
+
+			
+			
+			
+			
 			var current_user = Auth.getCurrentUser();
 			if ( current_user ) {
 				template_args.user = { 
