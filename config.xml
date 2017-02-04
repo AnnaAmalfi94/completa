@@ -25,7 +25,7 @@
 	<plugin name="cordova-plugin-splashscreen" source="npm" />
 	<plugin name="cordova-plugin-device" source="npm" />
 	<plugin name="cordova-plugin-statusbar" source="npm" />
-	
+	<plugin name="cordova-plugin-crosswalk-webview" source="npm" />
 	<plugin name="cordova-plugin-customurlscheme" spec="4.2.0" >
 		<param name="URL_SCHEME" value="mygreatapp" />
 	</plugin>
