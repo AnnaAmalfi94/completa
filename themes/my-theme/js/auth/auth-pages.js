@@ -121,7 +121,7 @@ define( [ 'jquery', 'core/theme-app', 'core/modules/authentication' ], function(
 				var message = '';
 				switch ( info.core_data.logout_type ) {
 					case 'user-connection-expired':
-						message = 'Your connection has expired. Please log in again!';
+						message = '';
 						break;
 					case 'user-not-authenticated':
 						message = "Your connection has been reseted. Please log in again!";
