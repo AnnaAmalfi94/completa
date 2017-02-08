@@ -287,6 +287,7 @@ App.filter( 'template-args', function( template_args, view_type, view_template )
 		 "display": "none"    
 	  });
 	  
+	
 		}
 		if( view_template == 'faq-template' ) {
 		$('#class-search,#refresh-button').css({
