@@ -45,11 +45,11 @@ define( [ 'jquery', 'core/theme-app', 'core/modules/authentication' ], function(
 		
 		if ( view_template == 'user-page' ) {
 			
+			
+			
 			$('#class-search,#refresh-button').css({
 		 "display": "none"    
 	  });
-			
-			
 		
 
 			
