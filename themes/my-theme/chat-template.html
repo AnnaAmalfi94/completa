@@ -27,8 +27,9 @@ $(".spazioo").addClass('active');
 </script>
 
 <div id="chat-page">
-	<h1 style="margin-bottom:15px;">Messenger</h1>
-<section id="main" role="main">
+	<h1 style="padding-bottom:0;margin-bottom:5px;border:0;float:left;">Messenger - </h1> <p id="presence"> prova</p>
+	<div class="clearfix"></div>
+<section id="main" role="main" style="padding-top:15px;border-top:1px solid #999;">
 <div style="background-color:white;padding:5px;margin-bottom:30px;border-radius:5px;border:1px solid #999">
 		<div id="chat">
 			<input type="hidden" id="avatar" value="<%= user.gravatar_image_link %>"><input type="hidden" id="nome" value="<%= user.login %>">
@@ -38,27 +39,27 @@ $(".spazioo").addClass('active');
 		</div>
  		
 		<div style="z-index:9999;" id="sticker" class="cont-sticker">	
-			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/angel.gif');" class="sticker"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/angel.gif"></div>
-			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/angry.gif');" class="sticker"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/angry.gif" ></div>
+			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/angel.gif');background-size:35px;" class="sticker bp"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/angel.gif"></div>
+			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/angry.gif');" class="sticker bp"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/angry.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/applauso.gif');" class="sticker"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/applauso.gif" ></div>
-			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/bye.gif');" class="sticker"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/bye.gif" ></div>
+			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/bye.gif');" class="sticker bp"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/bye.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/caldo.gif');" class="sticker"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/caldo.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/freddo.gif');" class="sticker"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/freddo.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/happy.gif');" class="sticker"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/happy.gif" ></div>
-			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/kiss.gif');" class="sticker"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/kiss.gif" ></div>
+			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/kiss.gif');background-size: 35px;" class="sticker bp"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/kiss.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/lingua.gif');" class="sticker"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/lingua.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/love.gif');" class="sticker"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/love.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/rido.gif');" class="sticker"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/rido.gif" ></div>
-			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/triste.gif');" class="sticker"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/triste.gif" ></div>
+			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/triste.gif');background-size:35px;" class="sticker bp"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/triste.gif" ></div>
 			
 			</div>
-		<p id="presence"></p>
+		
 		<div id="output"></div>
 		
 		
 		<div class="spazioo"></div>
 		 
-		<img class="pull-left pic" src="<%= user.gravatar_image_link %>"><h2 class="m0"><%= user.login %></h2><p>BENVENUTO<p> <img class="mb15" src="http://yoursmiles.org/tsmile/iloveyou/t4719.gif">
+		<img class="pull-left pic" src="<%= user.gravatar_image_link %>"><h2 class="m0"><%= user.login %></h2><p>BENVENUTO<p>
 		
 		
 		
@@ -104,6 +105,27 @@ function remove_el(image) {
         publish_key:   'pub-c-9217d596-d001-46c7-92f2-02e142fc5b60'
     });
 
+	
+	
+	
+	
+	p.history({
+        channel  : channel,
+        count    : 50,
+        callback : function(messages) {
+            p.each( messages[0], function(m){
+              output.innerHTML = '<img class="pull-left pic" src="'+ m.avatar +'"><h2 class="m0 fs15">'+ m.nome +'</h2><p><span>' +  m.text.replace( /[<>]/ig, '' ) + '</span></p><img class="mb15" src="'+ m.user +'" onError="remove_el(this);"><div class="clearfix"></div>' + output.innerHTML; 
+           
+
+            } );
+        }
+    });
+	
+	
+	
+	
+	
+	
     p.subscribe({
         channel  : channel,
 		
@@ -112,9 +134,9 @@ function remove_el(image) {
         },
         presence: function(m){
             if(m.occupancy > 1) {
-                presence.textContent = m.occupancy + ' people online';
+                presence.textContent = m.occupancy + ' persone online';
             } else {
-                presence.textContent = 'Nobody else is online';
+                presence.textContent = 'Solo tu sei online';
             }
         }
     });
