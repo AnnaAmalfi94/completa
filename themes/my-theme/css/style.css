@@ -197,8 +197,17 @@ padding-left: 25px;
 }
 
 
+.bp{
+	background-position:center center;
+}
 
-
+#presence{
+	font-style:italic;
+	line-height: 45px;
+    padding-top: 20px;
+	margin:0 !important;
+	color: #337ab7;
+}
 
 .cerchio{
 width:40px;
