@@ -48,7 +48,7 @@ define(['jquery','core/theme-app','core/theme-tpl-tags','core/modules/storage','
 
 function onDeviceReady(){
     document.addEventListener("backbutton", function(e){
-       if($.mobile.activePage.is('#homepage')){
+       if($.mobile.activePage.is('#')){
            e.preventDefault();
            navigator.app.exitApp();
        }
