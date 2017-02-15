@@ -44,28 +44,6 @@ define(['jquery','core/theme-app','core/theme-tpl-tags','core/modules/storage','
    
    
    
-	document.addEventListener("deviceready", onDeviceReady, false);
-
-function onDeviceReady(){
-    document.addEventListener("backbutton", function(e){
-       if($.mobile.activePage.is('#')){
-           e.preventDefault();
-           navigator.app.exitApp();
-       }
-       else {
-           navigator.app.backHistory()
-       }
-    }, false);
-}
-	
-	
-	
-	
-	
-	
-	
-	
-	
    
    
    
@@ -192,6 +170,7 @@ $(document).ready(function () {
 	    
 	  });
 $(".spaziooo").addClass('active');
+$("#hormenu").addClass('bcb');
 
 	});
  
@@ -205,6 +184,7 @@ $(".spaziooo").addClass('active');
 	    
 	  });
 $(".spaziooo").removeClass('active');
+$("#hormenu").removeClass('bcb');
 
 	});
 	
@@ -216,6 +196,7 @@ $(".spaziooo").removeClass('active');
 	    
 	  });
 	  $(".spaziooo").removeClass('active');
+	  $("#hormenu").removeClass('bcb');
 
 
 	});
@@ -241,7 +222,7 @@ $(".spaziooo").removeClass('active');
 	    
 	  });
 	  	$(".spazioo").addClass('active');
-
+		
 
 	});
 
@@ -255,6 +236,7 @@ $(".spaziooo").removeClass('active');
 	    
 	  });
 	  $(".spazioo").removeClass('active');
+	  $("#class-search").removeClass('opa');
 
 
 	});
