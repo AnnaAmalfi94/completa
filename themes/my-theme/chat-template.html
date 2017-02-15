@@ -31,11 +31,12 @@ $(".spazioo").addClass('active');
 	<div class="clearfix"></div>
 <section id="main" role="main" style="padding-top:15px;border-top:1px solid #999;">
 <div style="background-color:white;padding:5px;margin-bottom:30px;border-radius:5px;border:1px solid #999">
-		<div id="chat">
+		<div id="chat" style="">
 			<input type="hidden" id="avatar" value="<%= user.gravatar_image_link %>"><input type="hidden" id="nome" value="<%= user.login %>">
-			<i id="face-1" class="face-1"><span style="vertical-align: middle;padding-right: 5px;" class="fa fa-smile-o"></span></i><input style="width:82%;float:left;border:0;background-color:transparent;" type="text" id="input" placeholder="Type your message...">
+			<i id="face-1" class="face-1"><span style="vertical-align: middle;padding-right: 5px;color:#666;" class="fa fa-smile-o"></span></i><input style="width:82%;float:left;border:0;background-color:transparent;" type="text" id="input" placeholder="Messaggio...">
 		</div>
-		<button class="invia" id="button"><span style="font-size:24px;" class="fa fa-chevron-circle-right"></span></button>
+		<button class="invia" id="button" style="float:right;"><span style="font-size:24px;color:#666;" class="fa fa-chevron-circle-right"></span></button>
+		<div class="clearfix"></div>
 		</div>
  		
 		<div style="z-index:9999;" id="sticker" class="cont-sticker">	
@@ -48,7 +49,7 @@ $(".spazioo").addClass('active');
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/happy.gif');" class="sticker"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/happy.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/kiss.gif');background-size: 35px;" class="sticker bp"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/kiss.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/lingua.gif');" class="sticker"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/lingua.gif" ></div>
-			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/love.gif');" class="sticker"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/love.gif" ></div>
+			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/love.gif'); background-size:35px;" class="sticker bp"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/love.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/rido.gif');" class="sticker"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/rido.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/triste.gif');background-size:35px;" class="sticker bp"><input type="checkbox" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/triste.gif" ></div>
 			
