@@ -21,7 +21,9 @@
 
 
 
-
+#profile a:hover{
+	color:#4285F4;
+}
 
 
 
@@ -51,8 +53,27 @@ input:focus{
 }
 
 .opa{
-opacity: 0.2;
-transform:scale(2,2);
+color: #04285F !important;
+-webkit-animation-name: rotating;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.ref{font-size:18px;color:white;line-height:20px;}
+
+.bcb{
+	background-color:#0e63e4;
+}
+
+#class-search:hover{
+	color: #04285F;
+}
+
+#meiu:hover{background-color:#0e63e4 !important;}
+
+.sidebar .sidebar-nav li:hover{
+	background-color:#DBDCDD;
 }
 
 
@@ -77,6 +98,34 @@ display:none;
 
 .p20{
 	padding:20px;
+}
+
+
+
+.condividi{
+	border-radius: 5px;
+    border: 0;
+    color: white;
+    background-color: #4285F4;
+    padding: 6px 12px;
+}
+
+.condividi:hover{background-color:#DBDCDD;border-color:#abacad;}
+
+
+
+#go-back{
+	margin: 15px 0px 10px 10px;
+    float: left;
+    display: block;
+    font-size: 21px;
+    color: white;
+    line-height: 20px;
+}
+
+
+#go-back:hover{
+	color: #04285F !important;
 }
 
 
@@ -115,10 +164,10 @@ div#hormenu li ul
    
     position: absolute;
     z-index:9999;
-    
-    padding: 10px;
+    box-shadow:0 1px 6px 0 rgba(0,  0,  0,  .2),  0 0 15px 0 rgba(0,  0,  0,  .3);
+   
     margin:0;
-    border:1px solid black;
+    border:1px solid #666;
     background: white;
 	top:15px;
 	right:15px;
@@ -128,10 +177,12 @@ div#hormenu li ul
 
 
 
-div#hormenu li ul li
-{
-    padding: 3px 10px 3px 3px;
+div#hormenu li ul li:hover{background-color:#DBDCDD;  
 }
+
+
+
+
 
 .chicca{
 	display:block;
@@ -139,9 +190,12 @@ div#hormenu li ul li
 }
 .chicca li a{
 	font-family:'blissful';
+	color:#666;
 }
 
-
+.chicca li a:hover{
+	color:#337ab7;
+}
 
 
 
@@ -165,7 +219,7 @@ div#hormenu li ul li
 	font-family: 'blissful';
 	    font-size: 18px;
 		font-weight:400;
-		color: #666;
+		
 }
 
 
@@ -790,6 +844,10 @@ a:active {
      border-top:  1px solid rgba(160,  160,  160,  .2);
      text-align:  center;
 }
+
+
+.card .card-action:hover{background-color:#DBDCDD;}
+
 .card .card-action span {
     margin-right:  5px;
      color:  #3b3b3b;
@@ -1743,7 +1801,7 @@ html {
     color:  #212121;
 }
 .sidebar-default .sidebar-nav li > a {
-    color:  #212121;
+    color:  #666;
      background-color:  transparent;
 	 font-family:'blissful';
 }
