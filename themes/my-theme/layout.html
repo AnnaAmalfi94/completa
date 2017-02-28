@@ -1,22 +1,22 @@
   <nav class="navbar navbar-default navbar-fixed-top navbar-md">
  <div class="container">
   <div class="navbar-header">
-               <button id="meiu" type="button" class="navbar-toggle sidebar-toggle left-menu-bar-btn"> 
+               <button id="meiu" style="display:block;" type="button" class="navbar-toggle sidebar-toggle left-menu-bar-btn"> 
                <span class="icon-bar">
                </span> 
                <span class="icon-bar">
                </span> 
                <span class="icon-bar">
                </span> </button>
- <a href="#" id="go-back" class="sei" style=""> <span style="" class="glyphicon glyphicon-chevron-left">
+ <a href="#" id="go-back" class="sei" style="display:none;"> <span style="" class="glyphicon glyphicon-chevron-left">
                </span></a>			   
 			   
 			   <div id="hormenu"> <ul><li> <a id="vegeta" style="padding-left: 15px;">
                <span id="vertical" style="font-size:21px;color:white;" class="fa fa-ellipsis-vertical">
                </span> </a>
 			    <ul id="goku" class="chicca"> <!-- Lista annidata: voci del sotto-menu -->
-            <li style="padding: 10px 20px 5px 10px;"><a href="#my-page-route">Chi sono</a></li>
-            <li style="padding: 5px 20px 10px 10px;"><a href="#faq">Faq</a></li>
+            <li style="padding: 15px 25px 7px 13px;"><a id="my" href="#my-page-route">Chi sono</a></li>
+            <li style="padding: 7px 25px 15px 13px;"><a href="#faq">Faq</a></li>
             
         </ul> <!-- Fine del sotto-menu -->	<div class="spaziooo"></div>
 		</li></ul></div>
@@ -32,7 +32,7 @@
                </span></a>
 			  </div>
 			   
-               <span class="navbar-brand center-block" href="#"><img src="<%= TemplateTags.getThemePath() %>/img/logo.png" class="img-responsive logo center-block"/>
+               <span class="navbar-brand center-block" href="#"><p class="logo" style=""><%= app_title %></p>
                </span> 
 			   
 			   

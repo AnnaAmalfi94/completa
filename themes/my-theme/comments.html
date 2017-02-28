@@ -7,7 +7,7 @@
             <% _.each( comments, function( comment ){ %>
                 <li class="media" style="padding-left:<% print((comment.depth)*10) %>px">
                     <div class="media-body">
-					<img style="float:left; width:30px; height:35px; margin-right:5px;" src="<%= comment.gravatar_image_link %>">
+					<img style="float:left; width:35px; height:35px; border-radius:35px; margin-right:5px;" src="<%= comment.gravatar_image_link %>">
                         <h4 style="margin-bottom:0;" class="media-heading"><%= comment.author %>&nbsp;<small> <%= TemplateTags.formatDate(comment.date,'d/m/Y') %></small></h4>
                         <p><%= comment.content %></p>
                     </div>
