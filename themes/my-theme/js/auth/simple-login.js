@@ -31,7 +31,7 @@ define( [ 'jquery', 'core/theme-app', 'core/modules/authentication' ], function(
 			$user_info.html( '<a id="utente" href="#user-page"><img width="80px;" class="img-circle center-block img-responsive" src="'+ current_user.info.gravatar_image_link +'" /> '+ current_user.login +'</a>');
 		} else { 
 			//User not logged in : display the login button :
-			$user_info.html( '<p><span style="font-size:30px;color:white;" class="fa fa-user"></span></p> <a href="#login-page" style="color:white;">Log in</a> <a style="color:white;margin-bottom:10px;" href="#reg">/ Registrati</a>' );
+			$user_info.html( '<p><span style="font-size:48px;color:white;" class="fa fa-user"></span></p> <a href="#login-page" style="color:white;">Log in</a> <a style="color:white;margin-bottom:10px;" href="#reg">/ Registrati</a>' );
 		}
 		
 	};
