@@ -137,6 +137,11 @@ $(document).ready(function () {
 	 var $meiu = $( '#meiu' );
 	var $back_button = $( '#go-back' );
 	
+	
+
+	
+	
+	
 	//Show/Hide back button (in place of refresh button) according to current screen:
 	App.on( 'screen:showed', function () {
 		var display = App.getBackButtonDisplay();
@@ -164,7 +169,7 @@ $(document).ready(function () {
  $(document).ready(function () {
  
   $("#vegeta").click(function(){
-	 $("#goku").css({
+	 $("#goku").fadeIn(300).css({
 		 "display": "block"
 		  
 	    
@@ -178,11 +183,7 @@ $("#hormenu").addClass('bcb');
  
  
  $("#goku").click(function(){
-	 $(this).css({
-		 "display": "none"
-		  
-	    
-	  });
+	 $(this).fadeOut(300);
 $(".spaziooo").removeClass('active');
 $("#hormenu").removeClass('bcb');
 
@@ -190,11 +191,7 @@ $("#hormenu").removeClass('bcb');
 	
 	
 	$(".spaziooo").click(function(){
-	 $('#goku').css({
-		 "display": "none"
-		  
-	    
-	  });
+	 $('#goku').fadeOut(300);
 	  $(".spaziooo").removeClass('active');
 	  $("#hormenu").removeClass('bcb');
 
@@ -291,6 +288,11 @@ App.filter( 'template-args', function( template_args, view_type, view_template )
 		 "display": "none"    
 	  });
 	  
+	 
+$( '#meiu' ).hide();
+			$( '#go-back' ).show();
+
+	  
 	
 		}
 		if( view_template == 'faq-template' ) {
@@ -372,7 +374,12 @@ App.filter( 'template-args', function( template_args, view_type, view_template )
  
  
   
- 
+ App.filter( 'template', function( template, current_screen) {
+      if( TemplateTags.isCategory('social', current_screen) ){
+            template = 'archive-social'; //Don't need .html here.
+      }
+      return template;
+} );
  
  
  
