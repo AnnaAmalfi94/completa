@@ -1,3 +1,4 @@
+
 <script>
 $(document).ready(function () {
  
@@ -24,13 +25,20 @@ $(document).ready(function () {
 </script>
 
 
+
+
+
 <div style="z-index:9999;position: relative;" class="search-container">
     <form id="search-form">
-            <input value="<%= current_search.search_string %>" id="search-field" class="search-field" type="search" /><button id="search-button" class="search-button">Search</button>
+            <input value="<%= current_search.search_string %>" id="search-field" class="search-field" type="search" /><button id="search-button" class="search-button">Cerca</button>
     </form>
 </div>
+
 <div class="spazioo"></div>
-<h1> <%= list_title %> ( <%= total %>)</h1>
+
+
+
+<h1> <%= list_title %> (<%= total %>)</h1>
 <% if( posts.length ){ %>
       <ul style="padding:0;">
             <% _.each( posts, function( post ){ %>
@@ -45,8 +53,11 @@ $(document).ready(function () {
                               <a href="<%= TemplateTags.getPostLink(post.id) %>"><%= post.title %></a>
                               
                         </h2>
-                        <p style="margin:0;font-style:italic;"><%= post.excerpt %></p>
-                        <span style="color:#777;"><small><%= TemplateTags.formatDate(post.date,'d/m/Y') %>&nbsp;-&nbsp;<%= nb_comments %> comment<% nb_comments > 1 ? print('s') : '' %></small></span>
+                        
+                        <span style="color:#777;font-size:12px;"><span class="fa fa-calendar">
+               </span>&nbsp;<%= TemplateTags.formatDate(post.date,'d/m/Y') %>&nbsp;-&nbsp;<span style="" class="glyphicon glyphicon-comment">
+               </span>&nbsp;<%= nb_comments %></span>
+						<p style="margin:0;font-style:italic;font-size:13px;"><%= post.excerpt %></p>
                   </li>
             <% }); %>
       </ul>
@@ -55,5 +66,74 @@ $(document).ready(function () {
 <% } %>
 
 
-
   <div class="cerchio"><a href="#chat"><span style="color:white;" class="fa fa-comments-o fs22"></span></a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

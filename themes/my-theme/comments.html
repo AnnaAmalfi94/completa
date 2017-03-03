@@ -15,15 +15,15 @@
             <% }) %>
         </ul>
     <% }else{ %>
-            <p>Nessun commento</p>
+            <p>Esprimi per primo la tua opinione su questo articolo!</p>
     <% } %>
     <form id="comment-form">
         <div class="form-group">
-            <label for="comment-content">Add a comment :</label> 
+            <label for="comment-content">Aggiungi un commento :</label> 
             <textarea name="content" cols="45" rows="8" class="form-control" ></textarea>
         </div>
         <input type="hidden" name="post" value="<%= post.id %>" >
-        <button type="submit" class="btn btn-info pull-right">Invia commento</button>
+        <button type="submit" class="btn btn-info">Invia commento</button>
     </form>
 </div>
 

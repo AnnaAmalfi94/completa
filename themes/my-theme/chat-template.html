@@ -2,23 +2,19 @@
 $(document).ready(function () {
  
   $("#face-1").click(function(){
-	 $("#sticker").css({
+	 $("#sticker").slideDown("slow").css({
 		 "display": "block"
 		  
 	    
 	  });
-$(".spazioo").addClass('active');
+$(".spazioooo").addClass('active');
 $(".smile").addClass('smile1');
 
 	});
  
- $(".spazioo").click(function(){
-	 $('#sticker').css({
-		 "display": "none"
-		  
-	    
-	  });
-	  $(".spazioo").removeClass('active');
+ $(".spazioooo").click(function(){
+	 $('#sticker').slideUp("slow");
+	  $(".spazioooo").removeClass('active');
 	  $(".smile").removeClass('smile1');
 
 
@@ -26,17 +22,15 @@ $(".smile").addClass('smile1');
 	
 	
 	$(".invia").click(function(){
-	 $('#sticker').css({
-		 "display": "none"
-		  
-	    
-	  });
-	  $(".spazioo").removeClass('active');
+	 $('#sticker').slideUp("slow");
+	  $(".spazioooo").removeClass('active');
 	  $(".smile").removeClass('smile1');
 
 
 	});
 	
+	
+
 	
 	
 	});
@@ -48,37 +42,47 @@ $(".smile").addClass('smile1');
 	<h1 style="padding-bottom:0;margin-bottom:5px;border:0;float:left;">Messenger - </h1> <p id="presence"> </p>
 	<div class="clearfix"></div>
 <section id="main" role="main" style="padding-top:15px;border-top:1px solid #999;">
-<div style="background-color:white;padding:5px;margin-bottom:30px;border-radius:5px;border:1px solid #999">
+<div style="background-color:white;padding:5px;border-radius:5px;border:1px solid #999">
 		<div id="chat" style="">
 			<input type="hidden" id="avatar" value="<%= user.gravatar_image_link %>"><input type="hidden" id="nome" value="<%= user.login %>">
-			<i id="face-1" class="face-1"><span style="" class="fa fa-smile-o smile"></span></i><input style="width:82%;float:left;border:0;background-color:transparent;position:relative;z-index:9999;" type="text" id="input" placeholder="Messaggio...">
+			<i id="face-1" class="face-1"><span style="" class="fa fa-smile-o smile"></span></i><input style="" class="messaggio" type="text" id="input" placeholder="Messaggio...">
 		</div>
-		<button class="invia" id="button" style="float:right;position:relative;z-index:9999;"><span style="" class="fa fa-chevron-circle-right chevron"></span></button>
+		<button class="invia" id="button" style="float:right;position:relative;z-index:1031;"><span style="" class="fa fa-chevron-circle-right chevron"></span></button>
 		<div class="clearfix"></div>
 		</div>
  		
 		<div style="z-index:9999;" id="sticker" class="cont-sticker">
 	
-			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/angel.gif');background-size:35px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/angel.gif"></div>
+			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/angel.gif');background-size:28px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/angel.gif"></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/angry.gif');" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/angry.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/applauso.gif');" class="sticker"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/applauso.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/bye.gif');" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/bye.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/caldo.gif');" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/caldo.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/freddo.gif');" class="sticker"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/freddo.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/happy.gif');" class="sticker"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/happy.gif" ></div>
-			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/kiss.gif');background-size: 35px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/kiss.gif" ></div>
+			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/kiss.gif');background-size: 28px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/kiss.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/lingua.gif');" class="sticker"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/lingua.gif" ></div>
-			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/love.gif'); background-size:35px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/love.gif" ></div>
-			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/rido.gif');background-size:35px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/rido.gif" ></div>
-			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/triste.gif');background-size:35px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/triste.gif" ></div>
+			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/love.gif'); background-size:28px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/love.gif" ></div>
+			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/rido.gif');background-size:28px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/rido.gif" ></div>
+			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/triste.gif');background-size:28px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/triste.gif" ></div>
+			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/confuso.gif');background-size:25px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/confuso.gif" ></div>
+			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/devil.gif');" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/devil.gif" ></div>
+			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/tel.gif');background-size:28px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/tel.gif" ></div>
+			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/tazza.gif');background-size:28px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/tazza.gif" ></div>
+			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/silenzio.gif');background-size:28px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/silenzio.gif" ></div>
+			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/si.gif');background-size:28px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/si.gif" ></div>
+			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/imbro.gif');background-size:28px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/imbro.gif" ></div>
+			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/win.gif');" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/win.gif" ></div>
+			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/demone.gif');background-size:23px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/demone.gif" ></div>
+			
 			<div class="clearfix"></div>
 			</div>
 			
 		
-		<div id="output"></div>
+		<div style="margin-top:30px;" id="output"></div>
 		
 		
-		<div class="spazioo"></div>
+		<div class="spazioooo"></div>
 		 
 		<table><tr><th><img class="pull-left pic" src="<%= user.gravatar_image_link %>"></th><th><h2 class="m0"><%= user.login %></h2><p>BENVENUTO</p></th></tr></table>
 		
@@ -178,6 +182,14 @@ function remove_el(image) {
             message : {avatar: avatar.value, nome: nome.value, user: $('input[name=interesse]:checked').removeAttr('checked').val(), text: ""}, 
           
         });
+		
+		
+		
+		$('#sticker').slideUp("slow");
+	  $(".spazioooo").removeClass('active');
+	  $(".smile").removeClass('smile1');
+		
+		
 	 
 	 });
 	
