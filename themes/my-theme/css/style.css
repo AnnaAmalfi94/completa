@@ -148,6 +148,7 @@ display:none;
     color: white;
     background-color: #4285F4;
     padding: 6px 12px;
+	margin-top:10px;
 }
 
 .condividi:hover{background-color:#DBDCDD;border-color:#abacad;}
@@ -257,10 +258,20 @@ div#hormenu li ul li:hover{background-color:#DBDCDD;
 
 #single h1{
 	font-family: 'blissful';
-	    font-size: 18px;
+	    font-size: 21px;
 		font-weight:400;
 		
 }
+
+
+
+
+#default .col-xs-6{
+	padding-left:0;
+	padding-right:10px;
+}
+
+
 
 
 .app-screen ul{
@@ -272,23 +283,32 @@ div#hormenu li ul li:hover{background-color:#DBDCDD;
 
 #app-menu ul > :first-child{
 	
-background-image:url('../img/web.png');
+background-image:url('../img/ultimi.png');
 background-repeat: no-repeat;
 padding-left: 25px;
 margin-top:10px;
 }
 
 #app-menu li:nth-child(2){
-	background-image:url('../img/social.png');
+	background-image:url('../img/tech.png');
 	background-repeat: no-repeat;
 padding-left: 25px;
 }
 
 #app-menu li:nth-child(3){
-	background-image:url('../img/tech.png');
+	background-image:url('../img/web.png');
 	background-repeat: no-repeat;
 padding-left: 25px;
 }
+
+
+
+#app-menu li:nth-child(4){
+	background-image:url('../img/social.png');
+	background-repeat: no-repeat;
+padding-left: 25px;
+}
+
 
 
 .bp{
@@ -302,6 +322,19 @@ padding-left: 25px;
 	margin:0 !important;
 	color: #337ab7;
 }
+
+
+
+.messaggio{
+	width:82%;
+	float:left;
+	border:0;
+	background-color:transparent;
+	position:relative;
+	z-index:1031;
+}
+
+
 
 .cerchio{
 width:40px;
@@ -359,16 +392,16 @@ color:white;
 	border-bottom:1px solid #999;
 	display:none;
 	border-radius:3px;
-	margin-top: -33px;
+	margin-top: -3px;
 	position: relative;
 }
 
 .sticker{
-	width:43px;
-	height:43px;
+	width:35px;
+	height:35px;
 	float:left;
 	padding:0;
-	margin:10px;
+	margin:6px;
 	background-repeat: no-repeat;
 	background-size:100%;
 }
@@ -377,8 +410,8 @@ color:white;
 #interesse{
 	 -webkit-appearance: none;
  appearance: none;
-width: 43px;
-height: 43px;
+width: 35px;
+height: 35px;
 cursor: pointer;
 background-color: transparent;
 margin:0;
@@ -388,8 +421,8 @@ margin:0;
 #interesse:checked {
 -webkit-appearance: none;
  appearance: none;
-width: 43px;
-height: 43px;
+width: 35px;
+height: 35px;
 cursor: pointer;
 background-color: rgba(220,220,220,0.5);
 margin:0;
@@ -480,6 +513,42 @@ margin:0;
      -moz-transition-delay:  0;
      transition-delay:  0;
 }
+
+
+
+
+
+
+
+
+.spazioooo {
+    visibility:  hidden;
+     position:  fixed;
+     top:  0;
+     left:  0;
+     right:  0;
+     bottom:  0;
+     opacity:  0;
+     background:  transparent;
+     z-index:  1030;
+     -webkit-transition:  visibility 0 linear 0.4s,  opacity 0.4s cubic-bezier(0.4,  0,  0.2,  1);
+     -moz-transition:  visibility 0 linear 0.4s,  opacity 0.4s cubic-bezier(0.4,  0,  0.2,  1);
+     transition:  visibility 0 linear 0.4s,  opacity 0.4s cubic-bezier(0.4,  0,  0.2,  1);
+     -webkit-transform:  translateZ(0);
+     -moz-transform:  translateZ(0);
+     -ms-transform:  translateZ(0);
+     -o-transform:  translateZ(0);
+     transform:  translateZ(0);
+}
+.spazioooo.active {
+    opacity:  0.5;
+     visibility:  visible;
+     -webkit-transition-delay:  0;
+     -moz-transition-delay:  0;
+     transition-delay:  0;
+}
+
+
 
 
 
@@ -1037,11 +1106,12 @@ h1, h2 {
 }
 h1 {
     
-	font-family:'Tangerine', cursive;
-	font-weight: 700;
+	font-family:'blissful';
+	font-weight: 300;
     padding-bottom: 5px;
      text-align:  left;
      border-bottom:  1px solid #999;
+	 font-size: 21px;
 }
 
 
@@ -1051,8 +1121,8 @@ h1 {
      position:  relative;
 }
 h2 {
-    font:1.3em/1.2em'blissful';
-	
+font-size: 15px;
+	font-weight: 600;
      margin:  20px 0;
 }
 p.pager {
@@ -1603,6 +1673,20 @@ html {
     margin-left:  240px;
 }
 }
+
+
+
+
+@media (min-width: 370px) and (max-width:380px){
+	.messaggio{width:85%;}
+}
+
+
+@media (min-width: 400px) and (max-width:420px){
+	.messaggio{width:86%;}
+}
+
+
 /* -- Sidebar style ------------------------------- */.sidebar {
     position:  relative;
      display:  block;
