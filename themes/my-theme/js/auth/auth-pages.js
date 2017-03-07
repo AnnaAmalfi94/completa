@@ -56,6 +56,12 @@ define( [ 'jquery', 'core/theme-app', 'core/modules/authentication' ], function(
 			
 			
 			
+			 
+			
+			
+			
+			
+			
 			var current_user = Auth.getCurrentUser();
 			if ( current_user ) {
 				template_args.user = { 
@@ -124,7 +130,7 @@ define( [ 'jquery', 'core/theme-app', 'core/modules/authentication' ], function(
 						message = '';
 						break;
 					case 'user-not-authenticated':
-						message = "Your connection has been reseted. Please log in again!";
+						message = "";
 						break;
 				} 
 				if ( message ) {
@@ -145,16 +151,16 @@ define( [ 'jquery', 'core/theme-app', 'core/modules/authentication' ], function(
 			//Intercept key login error events :
 			switch ( event_data.event ) {
 				case 'auth:empty-user':
-					message = "User login is empty";
+					message = "User login vuoto";
 					break;
 				case 'auth:wrong-user':
-					message = "User not found";
+					message = "User non trovato";
 					break;
 				case 'auth:wrong-pass':
-					message = "User name and password do not match";
+					message = "User name e password non corrispondono";
 					break;
 				default:
-					message = "User authentication failed :(";
+					message = "User authentication fallito :(";
 					break;
 			}
 			

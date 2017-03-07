@@ -48,6 +48,7 @@ define( [ 'jquery', 'core/theme-app', 'core/modules/authentication' ], function(
 		
 		
 		
+		
 		 var $meiu = $( '#meiu' );
 	var $back_button = $( '#go-back' );
 		if ( App.getBackButtonDisplay() ) {
@@ -63,7 +64,6 @@ define( [ 'jquery', 'core/theme-app', 'core/modules/authentication' ], function(
 			$meiu.show();
 
 }	
-		
 		
 		
 			var current_user = Auth.getCurrentUser();
