@@ -1,11 +1,12 @@
 <div id="post-comments-list">
-    <ol style="padding:20px 0 10px;margin-bottom:0;" class="breadcrumb">
-        <li style="color:#777;">Commenti sull'articolo: <a href="<%= TemplateTags.getPostLink(post.id) %>"><%= post.title %></a></li>
+<h1>Commenti</h1>
+    <ol style="padding:0px 0 20px;margin-bottom:0;" class="breadcrumb">
+        <li style="color:#777;">Articolo: <a href="<%= TemplateTags.getPostLink(post.id) %>"><%= post.title %></a></li>
     </ol>
     <% if(comments.length){ %>
         <ul class="media-list">
             <% _.each( comments, function( comment ){ %>
-                <li class="media" style="padding-left:<% print((comment.depth)*10) %>px">
+                <li class="media" style="padding-left:<% print((comment.depth)*20) %>px">
                     <div class="media-body">
 					<img style="float:left; width:35px; height:35px; border-radius:35px; margin-right:5px;" src="<%= comment.gravatar_image_link %>">
                         <h4 style="margin-bottom:0;" class="media-heading"><%= comment.author %>&nbsp;<small> <%= TemplateTags.formatDate(comment.date,'d/m/Y') %></small></h4>
@@ -15,7 +16,7 @@
             <% }) %>
         </ul>
     <% }else{ %>
-            <p>Esprimi per primo la tua opinione su questo articolo!</p>
+            <span id="icon-com" class="fa fa-pencil"></span> <p style="margin-bottom:20px;"> Nessun commento trovato. <br> Esprimi per primo la tua opinione!</p>
     <% } %>
     <form id="comment-form">
         <div class="form-group">

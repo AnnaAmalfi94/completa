@@ -39,7 +39,7 @@ $(".smile").addClass('smile1');
 </script>
 
 <div id="chat-page">
-	<h1 style="padding-bottom:0;margin-bottom:5px;border:0;float:left;">Messenger - </h1> <p id="presence"> </p>
+	<h1 style="padding-bottom:0;margin-bottom:5px;border:0;float:left;">Messenger </h1> <p id="presence"> </p>
 	<div class="clearfix"></div>
 <section id="main" role="main" style="padding-top:15px;border-top:1px solid #999;">
 <div style="background-color:white;padding:5px;border-radius:5px;border:1px solid #999">
@@ -74,6 +74,9 @@ $(".smile").addClass('smile1');
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/imbro.gif');background-size:28px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/imbro.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/win.gif');" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/win.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/demone.gif');background-size:23px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/demone.gif" ></div>
+			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/foto.gif');" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/foto.gif" ></div>
+			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/game.gif');background-size:25px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/game.gif" ></div>
+            <div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/musica.gif');background-size: 33px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/musica.gif" ></div>
 			
 			<div class="clearfix"></div>
 			</div>
@@ -159,9 +162,9 @@ function remove_el(image) {
         },
         presence: function(m){
             if(m.occupancy > 1) {
-                presence.textContent = m.occupancy + ' persone online';
+                presence.textContent = ' -' + m.occupancy + ' persone online';
             } else {
-                presence.textContent = 'Solo tu sei online';
+                presence.textContent = ' - Solo tu sei online';
             }
         }
     });

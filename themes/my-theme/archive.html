@@ -45,20 +45,23 @@ $(document).ready(function () {
                   <% var nb_comments = post.nb_comments %>
                   <li style="margin-bottom:10px;">
 				  
+				  <table><tr><th style="padding-right:5px;">
 				  <% if( post.thumbnail.src && post.thumbnail.src.length ){ %>
-						 <a href="<%= TemplateTags.getPostLink(post.id) %>"><img class="media-object pull-left" style="width: 100px; height: auto; margin-right:5px;" src="<%= post.thumbnail.src %>"></a>
+						 <a href="<%= TemplateTags.getPostLink(post.id) %>"><div class="icon-comment"><%= nb_comments %></div><img class="media-object" style="width: 100px; height: auto;margin-top: -17px;z-index: 1034;" src="<%= post.thumbnail.src %>"></a>
 					<% } %>	
-					
+					  <span style="color:#777;font-size:12px;font-weight:600;"><span class="fa fa-calendar">
+               </span>&nbsp;<%= TemplateTags.formatDate(post.date,'d/m/Y') %></span>
+					</th>
+					<th>
                         <h2 style="padding:0;margin:0;">
-                              <a href="<%= TemplateTags.getPostLink(post.id) %>"><%= post.title %></a>
-                              
+                              <a href="<%= TemplateTags.getPostLink(post.id) %>"><%= post.title %></a>                        
                         </h2>
-                        
-                        <span style="color:#777;font-size:12px;"><span class="fa fa-calendar">
-               </span>&nbsp;<%= TemplateTags.formatDate(post.date,'d/m/Y') %>&nbsp;-&nbsp;<span style="" class="glyphicon glyphicon-comment">
-               </span>&nbsp;<%= nb_comments %></span>
 						<p style="margin:0;font-style:italic;font-size:13px;"><%= post.excerpt %></p>
-                  </li>
+
+</th>
+</tr>
+</table>                
+				 </li>
             <% }); %>
       </ul>
 <% }else{ %>
