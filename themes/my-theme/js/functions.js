@@ -40,10 +40,18 @@ define(['jquery','core/theme-app','core/theme-tpl-tags','core/modules/storage','
    
    
    
+   $("#app-layout").on("touchstart","#back-button", function(e){
+	   
+	   App.navigate( '#' );
+	   
+   });
    
    
-   
-   
+    $("#app-layout").on("touchend","#back-button", function(e){
+	   
+	   App.navigate( '#' );
+	   
+   });
    
    
    
