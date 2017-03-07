@@ -46,7 +46,7 @@ define( [ 'jquery', 'core/theme-app', 'core/modules/comments' ], function( $, Ap
 				window.scrollTo( 0, 0 );
 				
 				//Display a happiness message :
-				var message = !comment_data.waiting_approval ? 'Comment added successfully :)' : 'Your comment is awaiting moderation';
+				var message = !comment_data.waiting_approval ? 'Commento inviato :)' : 'Il tuo commento è in moderazione';
 				$( '#provah' ).removeClass( 'error' ).html( message ).slideDown();
 			},
 			function( error ) {
@@ -73,13 +73,13 @@ define( [ 'jquery', 'core/theme-app', 'core/modules/comments' ], function( $, Ap
 				
 			switch ( event_data.event ) {
 				case 'comment:content-empty':
-					message = "Comment content is empty!";
+					message = "Il form è vuoto!";
 					break;
 				case 'comment:already-said-that':
-					message = "Comment already posted.";
+					message = "Commento già postato.";
 					break;
 				default:
-					message = "Comment error :(";
+					message = "Errore :(";
 					break;
 			}
 			

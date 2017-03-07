@@ -366,7 +366,7 @@ App.filter( 'template-args', function( template_args, view_type, view_template )
  
  
  App.filter( 'template', function( template, current_screen) {
-      if( TemplateTags.isCategory('my-category', current_screen) ){
+      if( TemplateTags.isCategory('tecnologia', current_screen) ){
             template = 'archive-my-category'; //Don't need .html here.
       }
       return template;
@@ -375,7 +375,7 @@ App.filter( 'template-args', function( template_args, view_type, view_template )
  
   
  App.filter( 'template', function( template, current_screen) {
-      if( TemplateTags.isCategory('social', current_screen) ){
+      if( TemplateTags.isCategory('social-media', current_screen) ){
             template = 'archive-social'; //Don't need .html here.
       }
       return template;
