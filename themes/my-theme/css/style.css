@@ -48,7 +48,7 @@
 
 
 table {
-	margin-bottom:20px;
+	margin-bottom:10px;
 }
 
 th {
@@ -140,7 +140,10 @@ display:none;
 	padding:20px;
 }
 
-
+.c9{
+	color:#999;
+	font-size:16px;
+}
 
 .condividi{
 	border-radius: 5px;
@@ -238,13 +241,20 @@ div#hormenu li ul li:hover{background-color:#DBDCDD;
 	color:#337ab7;
 }
 
-
+#user{
+	font-size: 40px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px 15px;
+}
 
 .utente{
 	background-color:#4285F4;
 	padding-top:15px;
 	padding-bottom:10px;
 	text-align:center;
+	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .2), 0 0 15px 0 rgba(0, 0, 0, .3)!important;
 }
 
 #utente{
@@ -279,6 +289,19 @@ div#hormenu li ul li:hover{background-color:#DBDCDD;
 }
 
 
+.icon-comment{
+	background-image:url('../img/comment.png');
+	background-repeat: no-repeat;
+	background-position:top right;
+	height:30px;
+	width:100%;
+	z-index: 1040;
+    position: relative;
+	color:#777;
+	text-align:right;
+	padding:3px 9px;
+}
+
 
 
 #app-menu ul > :first-child{
@@ -287,18 +310,21 @@ background-image:url('../img/ultimi.png');
 background-repeat: no-repeat;
 padding-left: 25px;
 margin-top:10px;
+background-position: center left;
 }
 
 #app-menu li:nth-child(2){
 	background-image:url('../img/tech.png');
 	background-repeat: no-repeat;
 padding-left: 25px;
+background-position: center left;
 }
 
 #app-menu li:nth-child(3){
 	background-image:url('../img/web.png');
 	background-repeat: no-repeat;
 padding-left: 25px;
+background-position: center left;
 }
 
 
@@ -307,6 +333,7 @@ padding-left: 25px;
 	background-image:url('../img/social.png');
 	background-repeat: no-repeat;
 padding-left: 25px;
+background-position: center left;
 }
 
 
@@ -318,7 +345,7 @@ padding-left: 25px;
 #presence{
 	font-style:italic;
 	line-height: 45px;
-    padding-top: 20px;
+    padding-top: 10px;
 	margin:0 !important;
 	color: #337ab7;
 }
@@ -346,6 +373,7 @@ right:20px;
 position:fixed;
 text-align:center;
 color:white;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .2), 0 0 15px 0 rgba(0, 0, 0, .3);
 }
 
 
@@ -365,7 +393,7 @@ color:white;
 
 
 .smile{
-	vertical-align: middle;padding-right: 5px;color:#666;
+	vertical-align: middle;padding-right: 5px;color:#999;
 }
 
 .smile1{
@@ -374,13 +402,21 @@ color:white;
 
 
 .chevron{
-	font-size:24px;color:#666;
+	font-size:24px;color:#999;
+	
 }
 
 
 .chevron:active{
 	color:#4285F4;
+	
 }
+
+
+
+
+
+
 
 
 .cont-sticker{
@@ -401,7 +437,7 @@ color:white;
 	height:35px;
 	float:left;
 	padding:0;
-	margin:6px;
+	margin:5px;
 	background-repeat: no-repeat;
 	background-size:100%;
 }
@@ -606,6 +642,11 @@ color:white;
 }
 
 #home hr{
+	border-bottom:1px dashed #377EDC !important;
+	
+}
+
+#settings hr{
 	border-bottom:1px dashed #377EDC !important;
 	
 }
@@ -910,9 +951,27 @@ a:active {
      -o-transition:  all .2s ease-in-out;
 }
 
+.icon-social{
+	text-align:center;
+	margin-bottom:10px;
+	font-style:italic;
+	font-weight:300;
+}
+
+#icon-com{
+	font-size: 25px;
+    border: 1px solid #999;
+    color: #999;
+    border-radius: 50%;
+    padding: 7px;
+	float: left;
+    margin-right: 10px;
+}
+
 
 #post-comments-list h4{
-	font-family: 'blissful';
+	
+	font-weight:600;
 }
 
 #post-comments-list p{
@@ -1687,6 +1746,34 @@ html {
 }
 
 
+
+
+
+
+@media (min-width: 450px) and (max-width:485px){
+	.sticker{margin:4px;}
+}
+
+
+@media (min-width: 230px) and (max-width:260px){
+	.sticker{margin:7px;}
+}
+
+@media (min-width: 300px) and (max-width:330px){
+	.sticker{margin:6px;}
+}
+
+
+@media (min-width: 630px) and (max-width:650px){
+	.sticker{margin:4px;}
+}
+
+
+@media (min-width: 700px) and (max-width:7300px){
+	.sticker{margin:4px;}
+}
+
+
 /* -- Sidebar style ------------------------------- */.sidebar {
     position:  relative;
      display:  block;
@@ -1882,6 +1969,7 @@ html {
 }
 .sidebar .sidebar-nav li {
     position:  relative;
+	padding:5px;
      list-style-type:  none;
 }
 .sidebar .sidebar-nav li a {
@@ -2086,11 +2174,30 @@ html {
 .tab-content{}
 .tab-pane .contatti p{font-style: italic;}
 .tab-pane .contatti a{color:#333;}
+#h2-set{
+	font-family: 'Tangerine';
+    color: #2A2B2B;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+    margin: 0px 0 0px;
+}
 .h2-cont{
 	margin:0 0 10px 0;
 	text-align:center;
 	color:black;
 	font-size:17px;
+}
+
+#settings a{
+	color:#333;
+}
+
+
+#settings a:hover{
+	color:#337ab7;
+text-decoration:underline;
+
 }
 
 .card {
@@ -2189,7 +2296,7 @@ html {
     background: #4285F4;
     border: none;
     border-radius: 50%;
-    box-shadow: 0 3px 6px rgba(0,0,0,.275);
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .2), 0 0 15px 0 rgba(0, 0, 0, .3);
     outline: none;
 }
 .material-button-toggle {
