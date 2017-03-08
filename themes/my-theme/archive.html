@@ -30,7 +30,7 @@ $(document).ready(function () {
 
 <div style="z-index:9999;position: relative;" class="search-container">
     <form id="search-form">
-            <input value="<%= current_search.search_string %>" id="search-field" class="search-field" type="search" /><button id="search-button" class="search-button">Cerca</button>
+            <input value="<%= current_search.search_string %>" id="search-field" class="search-field" type="search" /><button id="search-button" class="search-button btn-gradient">Cerca</button>
     </form>
 </div>
 
@@ -43,7 +43,7 @@ $(document).ready(function () {
       <ul style="padding:0;">
             <% _.each( posts, function( post ){ %>
                   <% var nb_comments = post.nb_comments %>
-                  <li style="margin-bottom:10px;">
+                  <li style="margin-bottom:20px;">
 				  
 				  <table><tr><th style="padding-right:5px;">
 				  <% if( post.thumbnail.src && post.thumbnail.src.length ){ %>

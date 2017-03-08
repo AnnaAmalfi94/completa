@@ -38,7 +38,7 @@ $(document).ready(function () {
 
 <div style="z-index:9999;position: relative;" class="search-container">
     <form id="search-form">
-            <input value="<%= current_search.search_string %>" id="search-field" class="search-field" type="search" /><button id="search-button" class="search-button">Cerca</button>
+            <input value="<%= current_search.search_string %>" id="search-field" class="search-field" type="search" /><button id="search-button" class="search-button btn-gradient">Cerca</button>
     </form>
 </div>
 <div class="spazioo"></div>
@@ -47,7 +47,7 @@ $(document).ready(function () {
       <ul style="padding:0;" id="default">
             <% _.each( posts, function( post ){ %>
                   <% var nb_comments = post.nb_comments %>
-                  <li style="margin-bottom:10px;" class="col-xs-6">
+                  <li style="margin-bottom:20px;" class="col-xs-6">
 				  
 				  <% if( post.thumbnail.src && post.thumbnail.src.length ){ %>
 						 <a href="<%= TemplateTags.getPostLink(post.id) %>"><div class="icon-comment archiv-social"><%= nb_comments %></div><img class="media-object pull-left" style="width: 100%; height: auto; margin-bottom:5px;margin-top: -22px;" src="<%= post.thumbnail.src %>"></a>

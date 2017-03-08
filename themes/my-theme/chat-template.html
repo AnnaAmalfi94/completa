@@ -39,7 +39,7 @@ $(".smile").addClass('smile1');
 </script>
 
 <div id="chat-page">
-	<h1 style="padding-bottom:0;margin-bottom:5px;border:0;float:left;">Messenger </h1> <p id="presence"> </p>
+	<h1 style="padding-bottom:0;margin-bottom:5px;border:0;float:left;">Chat globale </h1> <p id="presence"> </p>
 	<div class="clearfix"></div>
 <section id="main" role="main" style="padding-top:15px;border-top:1px solid #999;">
 <div style="background-color:white;padding:5px;border-radius:5px;border:1px solid #999">
@@ -141,7 +141,7 @@ function remove_el(image) {
         count    : 50,
         callback : function(messages) {
             p.each( messages[0], function(m){
-              output.innerHTML = '<table><tr><th><img class="pull-left pic" src="'+ m.avatar +'"></th><th><div class="before thb"><h2 class="m0 fs15">'+ m.nome +'</h2><p><span>' +  m.text.replace( /[<>]/ig, '' ) + '</span></p><img class="mb15" src="'+ m.user +'" onError="remove_el(this);"></div></th></tr></table>' + output.innerHTML; 
+              output.innerHTML = '<table><tr><th><img class="pull-left pic" src="'+ m.avatar +'"></th><th><div class="before thb"><h2 class="m0 fs15">'+ m.nome +'</h2><p><span>' +  m.text.replace( /[<>]/ig, '' ) + '</span></p><img class="" src="'+ m.user +'" onError="remove_el(this);"></div></th></tr></table>' + output.innerHTML; 
            
 
             } );
@@ -157,7 +157,7 @@ function remove_el(image) {
         channel  : channel,
 		
         callback : function(m) { 
-            output.innerHTML = '<table><tr><th><img class="pull-left pic" src="'+ m.avatar +'"></th><th><h2 class="m0 fs15">'+ m.nome +'</h2><p><span>' +  m.text.replace( /[<>]/ig, '' ) + '</span></p><img class="mb15" src="'+ m.user +'" onError="remove_el(this);"></th></tr></table>' + output.innerHTML; 
+            output.innerHTML = '<table><tr><th><img class="pull-left pic" src="'+ m.avatar +'"></th><th><h2 class="m0 fs15">'+ m.nome +'</h2><p><span>' +  m.text.replace( /[<>]/ig, '' ) + '</span></p><img class="" src="'+ m.user +'" onError="remove_el(this);"></th></tr></table>' + output.innerHTML; 
         },
         presence: function(m){
             if(m.occupancy > 1) {
