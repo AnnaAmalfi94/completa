@@ -1,3 +1,43 @@
+
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6db3f2+0,54a3ee+50,3690f0+51,1e69de+100;Blue+Gloss+%233 */
+#gradient{
+background: rgb(109,179,242); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(109,179,242,1) 0%, rgba(84,163,238,1) 50%, rgba(54,144,240,1) 51%, rgba(30,105,222,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+.btn-gradient{
+	background: rgb(109,179,242); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(109,179,242,1) 0%, rgba(84,163,238,1) 14%, rgba(30,105,222,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 14%,rgba(30,105,222,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 14%,rgba(30,105,222,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=0 ); /* IE6-9 */
+font-family:'courgette';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*---------------fonts----------------*/
 
 
@@ -295,11 +335,19 @@ div#hormenu li ul li:hover{background-color:#DBDCDD;
 	background-position:top right;
 	height:30px;
 	width:100%;
-	z-index: 1040;
+	z-index: 1031;
     position: relative;
 	color:#777;
 	text-align:right;
 	padding:3px 9px;
+}
+
+
+.archiv-social{
+	background-size: 40px;
+    padding: 6px 14px !important;
+    font-weight: 700;
+	height:40px !important;
 }
 
 
@@ -963,7 +1011,7 @@ a:active {
     border: 1px solid #999;
     color: #999;
     border-radius: 50%;
-    padding: 7px;
+    padding: 7px 9px;
 	float: left;
     margin-right: 10px;
 }
@@ -1745,13 +1793,32 @@ html {
 	.messaggio{width:86%;}
 }
 
+.thb{
+	border: 1px solid #ccc;
+    padding: 10px;
+	background: #FFF;
+	border-radius: 5px !important;
+}
 
-
+.before:before{
+	content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    margin-left:-15px;
+    background: #FFF;
+    -webkit-transform: rotate(45deg);
+    border: 1px solid #ccc;
+    
+    border-right: 0 none;
+    border-top: 0 none;
+}
 
 
 
 @media (min-width: 450px) and (max-width:485px){
 	.sticker{margin:4px;}
+	.messaggio{width:88%;}
 }
 
 
