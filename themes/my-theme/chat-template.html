@@ -68,7 +68,6 @@ $(".smile").addClass('smile1');
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/confuso.gif');background-size:25px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/confuso.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/devil.gif');" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/devil.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/tel.gif');background-size:28px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/tel.gif" ></div>
-			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/tazza.gif');background-size:28px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/tazza.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/silenzio.gif');background-size:28px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/silenzio.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/si.gif');background-size:28px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/si.gif" ></div>
 			<div style="background-image:url('<%= TemplateTags.getThemePath() %>/img/emoticon/imbro.gif');background-size:28px;" class="sticker bp"><input type="radio" name="interesse" id="interesse" value="<%= TemplateTags.getThemePath() %>/img/emoticon/imbro.gif" ></div>
@@ -87,7 +86,7 @@ $(".smile").addClass('smile1');
 		
 		<div class="spazioooo"></div>
 		 
-		<table><tr><th><img class="pull-left pic" src="<%= user.gravatar_image_link %>"></th><th><h2 class="m0"><%= user.login %></h2><p>BENVENUTO</p></th></tr></table>
+		<table><tr><th><img class="pull-left pic" src="<%= user.gravatar_image_link %>"></th><th><div class="before thb"><h2 class="m0"><%= user.login %></h2><p>BENVENUTO</p></div></th></tr></table>
 		
 		
 		
@@ -142,7 +141,7 @@ function remove_el(image) {
         count    : 50,
         callback : function(messages) {
             p.each( messages[0], function(m){
-              output.innerHTML = '<table><tr><th><img class="pull-left pic" src="'+ m.avatar +'"></th><th><h2 class="m0 fs15">'+ m.nome +'</h2><p><span>' +  m.text.replace( /[<>]/ig, '' ) + '</span></p><img class="mb15" src="'+ m.user +'" onError="remove_el(this);"></th></tr></table>' + output.innerHTML; 
+              output.innerHTML = '<table><tr><th><img class="pull-left pic" src="'+ m.avatar +'"></th><th><div class="before thb"><h2 class="m0 fs15">'+ m.nome +'</h2><p><span>' +  m.text.replace( /[<>]/ig, '' ) + '</span></p><img class="mb15" src="'+ m.user +'" onError="remove_el(this);"></div></th></tr></table>' + output.innerHTML; 
            
 
             } );

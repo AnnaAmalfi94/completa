@@ -52,11 +52,12 @@ $(document).ready(function () {
 					  <span style="color:#777;font-size:12px;font-weight:600;"><span class="fa fa-calendar">
                </span>&nbsp;<%= TemplateTags.formatDate(post.date,'d/m/Y') %></span>
 					</th>
-					<th>
+					<th style="padding-left:5px;">
                         <h2 style="padding:0;margin:0;">
                               <a href="<%= TemplateTags.getPostLink(post.id) %>"><%= post.title %></a>                        
                         </h2>
 						<p style="margin:0;font-style:italic;font-size:13px;"><%= post.excerpt %></p>
+						
 
 </th>
 </tr>

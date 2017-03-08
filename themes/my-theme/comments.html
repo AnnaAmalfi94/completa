@@ -4,13 +4,13 @@
         <li style="color:#777;">Articolo: <a href="<%= TemplateTags.getPostLink(post.id) %>"><%= post.title %></a></li>
     </ol>
     <% if(comments.length){ %>
-        <ul class="media-list">
+        <ul style="margin-bottom:20px;" class="media-list">
             <% _.each( comments, function( comment ){ %>
                 <li class="media" style="padding-left:<% print((comment.depth)*20) %>px">
                     <div class="media-body">
-					<img style="float:left; width:35px; height:35px; border-radius:35px; margin-right:5px;" src="<%= comment.gravatar_image_link %>">
-                        <h4 style="margin-bottom:0;" class="media-heading"><%= comment.author %>&nbsp;<small> <%= TemplateTags.formatDate(comment.date,'d/m/Y') %></small></h4>
-                        <p><%= comment.content %></p>
+					<table><tr><th><img style=" width:35px; height:35px; border-radius:35px; margin-right:10px;" src="<%= comment.gravatar_image_link %>"></th><th>
+                       <div style="" class="before thb"> <h4 style="margin-bottom:0;" class="media-heading"><%= comment.author %>&nbsp;<small> <%= TemplateTags.formatDate(comment.date,'d/m/Y') %></small></h4>
+                        <p style="margin:0;"><%= comment.content %></p></div></th></tr></table>
                     </div>
                 </li>
             <% }) %>
@@ -24,7 +24,7 @@
             <textarea name="content" cols="45" rows="8" class="form-control" ></textarea>
         </div>
         <input type="hidden" name="post" value="<%= post.id %>" >
-        <button type="submit" class="btn btn-info">Invia commento</button>
+        <button type="submit" class="btn btn-info btn-gradient">Invia commento</button>
     </form>
 </div>
 
