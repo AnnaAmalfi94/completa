@@ -1,8 +1,8 @@
 
 
 
-
 <div id="single" class="post-<%= post.id %>">
+<div class="container-fluid">
     <h1><%= post.title %></h1>
 		<div style="font-style: italic;color: #777;"><img width="25px" height="25px" class="img-circle" src="<%= post.gravatar_image %>"> <%= post.author %> | <span class="fa fa-calendar">
                </span> 
@@ -14,12 +14,12 @@
                </span> <a class="comments" data-post-id="<%= post.id %>" href="<%= TemplateTags.getCommentsLink(post.id) %>">Commenta</a>
      
 
-  </div>
+  </div></div>
    <div style="margin-top:10px;" id="single-content">
         <% if(  post.thumbnail && post.thumbnail.src && post.thumbnail.src.length ){ %>
                 <img style="margin-bottom:10px;" class="img-responsive" src="<%= post.thumbnail.src %>" />
         <% } %>
-        <%= post.content %>
+      <div class="container-fluid">  <%= post.content %> </div>
     </div>
 	
 </div>

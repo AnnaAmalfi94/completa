@@ -37,7 +37,7 @@ $(".smile").addClass('smile1');
  
  
 </script>
-
+<div class="container-fluid">
 <div id="chat-page">
 	<h1 style="padding-bottom:0;margin-bottom:5px;border:0;float:left;">Chat globale </h1> <p id="presence"> </p>
 	<div class="clearfix"></div>
@@ -86,14 +86,15 @@ $(".smile").addClass('smile1');
 		
 		<div class="spazioooo"></div>
 		 
-		<table><tr><th><img class="pull-left pic" src="<%= user.gravatar_image_link %>"></th><th><div class="before thb"><h2 class="m0"><%= user.login %></h2><p>BENVENUTO</p></div></th></tr></table>
+		<table><tr><th><img class="pull-left pic" src="<%= user.gravatar_image_link %>"></th><th><div class="before thb"><h2 class="m0"><%= user.login %></h2><p>BENVENUTO</p><img class="pull-left" src="http://webworl.altervista.org/blog/wp-content/uploads/2016/09/default.png"><div class="clearfix"></div></div></th></tr></table>
+		<table><tr><th><img class="pull-left pic" src="<%= user.gravatar_image_link %>"></th><th><div class="before thb"><h2 class="m0"><%= user.login %></h2><p></p><img class="pull-left" src="<%= TemplateTags.getThemePath() %>/img/emoticon/musica.gif"><div class="clearfix"></div></div></th></tr></table>
 		
 		
 		
 	</section>
 </div>
 
-
+</div>
 <script>
 
 
@@ -141,7 +142,7 @@ function remove_el(image) {
         count    : 50,
         callback : function(messages) {
             p.each( messages[0], function(m){
-              output.innerHTML = '<table><tr><th><img class="pull-left pic" src="'+ m.avatar +'"></th><th><div class="before thb"><h2 class="m0 fs15">'+ m.nome +'</h2><p><span>' +  m.text.replace( /[<>]/ig, '' ) + '</span></p><img class="" src="'+ m.user +'" onError="remove_el(this);"></div></th></tr></table>' + output.innerHTML; 
+              output.innerHTML = '<table><tr><th><img class="pull-left pic" src="'+ m.avatar +'"></th><th><div class="before thb"><h2 class="m0 fs15">'+ m.nome +'</h2><p>' +  m.text.replace( /[<>]/ig, '' ) + '</p><img class="pull-left" src="'+ m.user +'" onError="remove_el(this);"><div class="clearfix"></div></div></th></tr></table>' + output.innerHTML; 
            
 
             } );
@@ -157,7 +158,7 @@ function remove_el(image) {
         channel  : channel,
 		
         callback : function(m) { 
-            output.innerHTML = '<table><tr><th><img class="pull-left pic" src="'+ m.avatar +'"></th><th><h2 class="m0 fs15">'+ m.nome +'</h2><p><span>' +  m.text.replace( /[<>]/ig, '' ) + '</span></p><img class="" src="'+ m.user +'" onError="remove_el(this);"></th></tr></table>' + output.innerHTML; 
+            output.innerHTML = '<table><tr><th><img class="pull-left pic" src="'+ m.avatar +'"></th><th><div class="before thb"><h2 class="m0 fs15">'+ m.nome +'</h2><p>' +  m.text.replace( /[<>]/ig, '' ) + '</p><img class="pull-left" src="'+ m.user +'" onError="remove_el(this);"><div class="clearfix"></div></div></th></tr></table>' + output.innerHTML; 
         },
         presence: function(m){
             if(m.occupancy > 1) {

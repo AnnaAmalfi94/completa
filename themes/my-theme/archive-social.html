@@ -34,7 +34,7 @@ $(document).ready(function () {
 	
 	</script>
 
-
+<div class="container-fluid">
 <div style="z-index:9999;position: relative;" class="search-container">
     <form id="search-form">
             <input value="<%= current_search.search_string %>" id="search-field" class="search-field" type="search" /><button id="search-button" class="search-button btn-gradient">Cerca</button>
@@ -60,6 +60,7 @@ $(document).ready(function () {
                         <span style="color:#777;font-size:12px;font-weight:600;"><span class="fa fa-calendar">
                </span>&nbsp;<%= TemplateTags.formatDate(post.date,'d/m/Y') %></span>
 						    <p style="margin:0;font-style:italic;font-size:13px;"><%= post.excerpt %></p>
+							<img class="pull-right" src="<%= TemplateTags.getThemePath() %>/img/angolo.png">
                   </li>
             <% }); %>
       </ul>
@@ -69,3 +70,4 @@ $(document).ready(function () {
 
 
   <div class="cerchio"><a href="#chat"><span style="color:white;" class="fa fa-comments-o fs22"></span></a></div>
+  </div>
