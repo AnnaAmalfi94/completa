@@ -43,7 +43,7 @@ $(document).ready(function () {
             <% _.each( posts, function( post ){ %>
                   <% var nb_comments = post.nb_comments %>
                   <li style="margin-bottom:20px;" class="col-xs-6">
-				  
+				  <div style="padding:5px;background-color:white;border-radius:5px">
 				  <% if( post.thumbnail.src && post.thumbnail.src.length ){ %>
 						 <a href="<%= TemplateTags.getPostLink(post.id) %>"><div class="icon-comment archiv-social"><%= nb_comments %></div><img class="media-object pull-left" style="width: 100%; height: auto; margin-bottom:5px;margin-top: -39px;border-radius: 5px;" src="<%= post.thumbnail.src %>"></a>
 					<% } %>	
@@ -56,7 +56,7 @@ $(document).ready(function () {
                         <span style="color:#777;font-size:12px;font-weight:600;"><span class="fa fa-calendar">
                </span>&nbsp;<%= TemplateTags.formatDate(post.date,'d/m/Y') %></span>
 						    <p style="margin:0;font-style:italic;font-size:13px;"><%= post.excerpt %></p>
-							
+					</div>		
                   </li>
             <% }); %>
 			<div class="clearfix"></div>
