@@ -379,6 +379,12 @@ App.filter( 'template-args', function( template_args, view_type, view_template )
 } );
  
  
+ App.filter( 'template', function( template, current_screen) {
+      if( TemplateTags.isCategory('web-design', current_screen) ){
+            template = 'archive-design'; //Don't need .html here.
+      }
+      return template;
+} );
  
  
  
