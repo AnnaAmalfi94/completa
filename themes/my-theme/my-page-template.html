@@ -1,4 +1,4 @@
-
+<div style="padding: 0 15px 0;">
 <script>
 	
     $('.material-button-toggle').click(function () {
@@ -15,11 +15,11 @@
 
 <div id="content" class="content list-template">
     
-	<div class="row" style="padding:5px;">
+	<div class="row" style="padding:0px;">
          
          
-                                    <!-- Nav tabs --><div class="">
-                                    <ul class="nav nav-tabs" role="tablist">
+                                    <!-- Nav tabs -->
+                                    <ul style="box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .2), 0 0 15px 0 rgba(0, 0, 0, .3)!important;" class="nav nav-tabs" role="tablist">
                                         <li style="padding-left:0; padding-right:0; text-align:center;" role="presentation" class="active col-xs-3"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">About</a></li>
                                         <li style="padding-left:0; padding-right:0; text-align:center;" role="presentation" class="col-xs-3"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Portfolio</a></li>
                                         <li style="padding-left:0; padding-right:0; text-align:center;" role="presentation" class="col-xs-3"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Skill</a></li>
@@ -27,8 +27,9 @@
                                     </ul>
 
                                     <!-- Tab panes -->
+									
                                     <div class="tab-content">
-                                        <div role="tabpanel" class="tab-pane active p20" id="home"> <img class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/header.jpg"> <br> <img class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/website.png"> <h2>static / dynamic / e-commerce</h2> <p><span class="fsi">Sono una giovane web designer</span><br> Investo continuamente nella mia formazione per offrire servizi sempre migliori.</p> <hr> <h2 class="fs35">Contattami</h2><p>Per maggiori informazioni, per richieste di preventivo e altro, oppure visita il mio sito web: <span class="fsi">www.annaamalfi.it</span></p><div class="col-xs-6"><img class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/numero.png"></div><div class="col-xs-6"><img class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/mail.png"></div><br><br><br><br><br><br><br><br><br>
+                                        <div role="tabpanel" class="tab-pane active" id="home"> <img class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/header.jpg"> <div class="p20"><img class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/website.png"> <h2>static / dynamic / e-commerce</h2> <p><span class="fsi">Sono una giovane web designer</span><br> Investo continuamente nella mia formazione per offrire servizi sempre migliori.</p> <hr> <h2 class="fs35">Contattami</h2><p>Per maggiori informazioni, per richieste di preventivo e altro, oppure visita il mio sito web: <span class="fsi">www.annaamalfi.it</span></p><div class="col-xs-6"><img class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/numero.png"></div><div class="col-xs-6"><img class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/mail.png"></div><br><br><br><br><br><br><br><br><br></div>
 										<div class="col-md-4 col-md-offset-4">
         <div class="material-button-anim">
           <ul class="list-inline" id="options">
@@ -207,10 +208,10 @@
       </div>
 										</div>
 										
-                                        <div role="tabpanel" class="tab-pane p20" id="settings"><h2 class="h2-cont">SEGUIMI SU</h2><div class="col-xs-3"><p class="icon-social"><a href="#" onClick="window.open('http://www.annaamalfi.it/','_system','location=yes');return false;"><span class="fa fa-globe c9"></span><br>sito</a></p></div>
-<div class="col-xs-3"><p class="icon-social"><a href="#" onClick="window.open('http://www.twitter.com/annaamalfi/','_system','location=yes');return false;"><span class="fa fa-twitter c9"></span><br>twitter</a></p></div>
-<div class="col-xs-3"><p class="icon-social"><a href="#" onClick="window.open('http://www.pinterest.com/annaamalfi/','_system','location=yes');return false;"><span class="fa fa-pinterest c9"></span><br>pinterest</a></p></div>
-<div class="col-xs-3"><p class="icon-social"><a href="#" onClick="window.open('http://www.behance.net/annamalfi5c9b/','_system','location=yes');return false;"><img src="<%= TemplateTags.getThemePath() %>/img/behance.png"><br>behance</a></p></div><div class="clearfix"></div><hr><h2 id="h2-set">Compila il form</h2><p style="text-align:justify;">per porre domande su questa applicazione, per segnalazioni, per diventare scrittore, per informazioni su di me, per richieste di preventivo o altro, oppure contattami via e-mail o telefono (clicca sulle icone in basso).</p>
+                                        <div role="tabpanel" class="tab-pane p20" id="settings"><h2 class="h2-cont">SEGUIMI SU</h2><div class="col-xs-3 plr0"><p class="icon-social"><a href="#" onClick="window.open('http://www.annaamalfi.it/','_system','location=yes');return false;"><span class="fa fa-globe c9"></span><br>sito web</a></p></div>
+<div class="col-xs-3 plr0"><p class="icon-social"><a href="#" onClick="window.open('http://www.twitter.com/annaamalfi/','_system','location=yes');return false;"><span class="fa fa-twitter c9"></span><br>twitter</a></p></div>
+<div class="col-xs-3 plr0"><p class="icon-social"><a href="#" onClick="window.open('http://www.pinterest.com/annaamalfi/','_system','location=yes');return false;"><span class="fa fa-pinterest c9"></span><br>pinterest</a></p></div>
+<div class="col-xs-3 plr0"><p class="icon-social"><a href="#" onClick="window.open('http://www.behance.net/annamalfi5c9b/','_system','location=yes');return false;"><img src="<%= TemplateTags.getThemePath() %>/img/behance.png"><br>behance</a></p></div><div class="clearfix"></div><hr><h2 id="h2-set">Compila il form</h2><p style="text-align:justify;">per porre domande su questa applicazione, per segnalazioni, per diventare scrittore, per informazioni su di me, per richieste di preventivo o altro, oppure contattami via e-mail o telefono (clicca sulle icone in basso).</p>
 										
 										
 									
@@ -285,7 +286,7 @@
 										
 										</div>
                                     </div>
-</div>
+
 
 
 
@@ -296,7 +297,7 @@
 
                                 </div>
 </div>
-
+</div>
 
 
 <script type="text/javascript">

@@ -2,26 +2,49 @@
 
 
 <div id="single" class="post-<%= post.id %>">
-<div class="container-fluid">
-    <h1><%= post.title %></h1>
-		<div style="font-style: italic;color: #777;"><img width="25px" height="25px" class="img-circle" src="<%= post.gravatar_image %>"> <%= post.author %> | <span class="fa fa-calendar">
-               </span> 
- <%= TemplateTags.formatDate(post.date,'d/m/Y') %> |
- 
-   <% if( post.nb_comments > 0 ){ %>
-      <a href="<%= TemplateTags.getCommentsLink(post.id) %>">
-            <% print(post.nb_comments) %><% } %></a>  <span style="color:#337ab7;" class="glyphicon glyphicon-comment">
-               </span> <a class="comments" data-post-id="<%= post.id %>" href="<%= TemplateTags.getCommentsLink(post.id) %>">Commenta</a>
-     
 
-  </div></div>
-   <div style="margin-top:10px;" id="single-content">
+   
+		
+		
+		
+   <div style="margin-top:0px;" id="single-content">
         <% if(  post.thumbnail && post.thumbnail.src && post.thumbnail.src.length ){ %>
-                <img style="margin-bottom:10px;" class="img-responsive" src="<%= post.thumbnail.src %>" />
-        <% } %>
-      <div class="container-fluid">  <%= post.content %> </div>
-    </div>
+                <img style="" class="img-responsive" src="<%= post.thumbnail.src %>" />
+        <% } %>		
+		
+		<div style="background-color:white;padding-bottom: 7px;">	
+      <div class="container-fluid">
+	  <div style="font-style: italic;color: #777;text-align:center;padding: 7px 0 0 0;" class="col-xs-4"> <span class="fa fa-calendar"></span> <br> <%= TemplateTags.formatDate(post.date,'d/m/Y') %></div>
+ 
+ <div style="padding: 0px 0 0 0;" class="col-xs-4"> <div style="font-style: italic;color: #777;text-align:center;"><img style="padding:8px;margin-top:-27px;background-color: white;position: relative;" width="55px" height="55px" class="img-circle center-block" src="<%= post.gravatar_image %>"> <span><%= post.author %></span> </div> </div> 
+	  
+<div style="font-style: italic;color: #777;text-align:center;padding: 7px 0 0 0;" class="col-xs-4"><span class="glyphicon glyphicon-comment"></span> <br> <%= post.nb_comments %> <% if( post.nb_comments === 1 ){
+print("commento")
+}
+else {
+print("commenti")
+
+} %></div>
+	</div></div>
+  
+  
+  
+  
+	  
+	<div style="padding-top:10px;" class="container-fluid">  <h1 style="margin:0;padding-top:10px;border:0;padding-bottom:0px;"><%= post.title %></h1> 
+		
+		 <%= post.content %> </div>
+	  
+	  
+	 </div>
 	
 </div>
 
-  <div class="cerchio"><a href="#chat"><span style="color:white;" class="fa fa-comments-o fs22"></span></a></div>	
+
+
+
+
+<a class="comments comment-top" data-post-id="<%= post.id %>" href="<%= TemplateTags.getCommentsLink(post.id) %>"><img src="<%= TemplateTags.getThemePath() %>/img/com-single.png"></a>
+
+  <div class="cerchio"><a href="#chat"><span style="color:white;" class="fa fa-comments-o fs22"></span></a></div>
+  

@@ -37,11 +37,17 @@ $(".smile").addClass('smile1');
  
  
 </script>
-<div class="container-fluid">
+
 <div id="chat-page">
-	<h1 style="padding-bottom:0;margin-bottom:5px;border:0;float:left;">Chat globale </h1> <p id="presence"> </p>
-	<div class="clearfix"></div>
-<section id="main" role="main" style="padding-top:15px;border-top:1px solid #999;">
+
+<div style="width:100%;margin-bottom:20px;border-bottom: 1px solid #DDD;font-size: 14px;color: #666;background-color:#4285F4;box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .2), 0 0 15px 0 rgba(0, 0, 0, .3)!important;">
+<div style="float:left;" class="container-fluid">
+<h1 style="border:0;color:white;font-weight:500;opacity:0.8;float:left;">Chat globale </h1> <p id="presence"> </p><div class="clearfix"></div></div><div style="float:right;" class="container-fluid"><a href="#" class="casa"><h1 style="border:0;color:white;font-weight:500;opacity:0.8;font-size:20px;" class="fa fa-home"></h1></a></div><div class="clearfix"></div></div>
+	
+	
+	
+	<div class="container-fluid">
+<section id="main" role="main" style="">
 <div style="background-color:white;padding:5px;border-radius:5px;border:1px solid #999">
 		<div id="chat" style="">
 			<input type="hidden" id="avatar" value="<%= user.gravatar_image_link %>"><input type="hidden" id="nome" value="<%= user.login %>">
@@ -86,8 +92,7 @@ $(".smile").addClass('smile1');
 		
 		<div class="spazioooo"></div>
 		 
-		<table><tr><th><img class="pull-left pic" src="<%= user.gravatar_image_link %>"></th><th><div class="before thb"><h2 class="m0"><%= user.login %></h2><p>BENVENUTO</p><img class="pull-left" src="http://webworl.altervista.org/blog/wp-content/uploads/2016/09/default.png"><div class="clearfix"></div></div></th></tr></table>
-		<table><tr><th><img class="pull-left pic" src="<%= user.gravatar_image_link %>"></th><th><div class="before thb"><h2 class="m0"><%= user.login %></h2><p></p><img class="pull-left" src="<%= TemplateTags.getThemePath() %>/img/emoticon/musica.gif"><div class="clearfix"></div></div></th></tr></table>
+		<table><tr><th><img class="pull-left pic" src="<%= user.gravatar_image_link %>"></th><th><div class="before thb"><h2 class="m0">Newsweb</h2><p>Benvenuto! Consulta la sezione faq per comprendere il funzionamento della chat.</p><img class="pull-left" src="http://webworl.altervista.org/blog/wp-content/uploads/2016/09/default.png"><div class="clearfix"></div></div></th></tr></table>
 		
 		
 		
