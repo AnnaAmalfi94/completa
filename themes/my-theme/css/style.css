@@ -23,13 +23,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', end
 
 
 
+.casa:active{
+	color:#04285F;
+}
+
+
 
 .bsfondo{
 	
 	background-image:url('../img/02.jpg');
 	background-repeat: no-repeat;
-	
-	background-size:170%;
+	background-position:top left;
+	background-size:190%;
 	
 	}
 	
@@ -41,7 +46,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', end
 .angolo{
 	background-image:url('../img/angolo.png');
 	background-repeat:no-repeat;
-	background-position:bottom right;
+	background-position:center right;
 }
 
 
@@ -154,6 +159,18 @@ color: #04285F !important;
 
 .ref{font-size:18px;color:white;line-height:20px;}
 
+
+
+
+.bb{
+	border-bottom:1px dotted #999;
+	border-right:1px dotted #999;
+	
+	}
+	
+
+
+
 .bcb{
 	background-color:#0e63e4;
 }
@@ -220,7 +237,7 @@ display:none;
 }
 
 
-#go-back:hover{
+#go-back:active{
 	color: #04285F !important;
 }
 
@@ -320,8 +337,9 @@ div#hormenu li ul li:hover{background-color:#DBDCDD;
 
 #single h1{
 	font-family: 'blissful';
-	    font-size: 21px;
+	    font-size: 18px;
 		font-weight:400;
+		text-transform:none !important;
 		
 }
 
@@ -329,8 +347,13 @@ div#hormenu li ul li:hover{background-color:#DBDCDD;
 
 
 #default .col-xs-6{
-	padding-left:0;
-	padding-right:10px;
+	padding-left: 5px;
+    padding-right: 5px;
+    background-color: white;
+   
+    border-radius: 5px;
+    padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 
@@ -402,12 +425,18 @@ background-position: center left;
 	background-position:center center;
 }
 
+.plr0{
+	padding-left:0 !important;
+	padding-right:0 !important;
+}
+
 #presence{
 	font-style:italic;
 	line-height: 45px;
-    padding-top: 10px;
+    padding-top: 8px;
 	margin:0 !important;
-	color: #337ab7;
+	color: white;
+	float: left;
 }
 
 
@@ -654,9 +683,10 @@ margin:0;
  * Search
 */
 .search-container {
-    padding: 20px 5px 0px 5px;
+    padding: 0px 5px 0px 0px;
     text-align: center;
 	display:none;
+	margin-bottom:20px;
 }
 .search-field {
     border-radius:5px;
@@ -774,7 +804,7 @@ a:active {
      border:  none!important;
      color:  #848484!important;
      background-color:  #4285F4!important;
-     box-shadow:  0 1px 6px 0 rgba(0,  0,  0,  .2),  0 0 15px 0 rgba(0,  0,  0,  .3)!important;
+    
      font-size:  14px!important;
 }
 .navbar-default .navbar-brand {
@@ -1028,6 +1058,25 @@ a:active {
     margin-right: 10px;
 }
 
+.comment-top{
+	position: fixed;
+    z-index: 1033;
+    top: 10px;
+    left: 45px;
+    font-size: 21px;
+	color:white;
+}
+
+
+.cond-top{
+	position: fixed;
+    z-index: 1033;
+    top: 13px;
+    right: 36px;
+    font-size: 21px;
+	color:white;
+}
+
 
 #post-comments-list h4{
 	
@@ -1224,14 +1273,14 @@ h1, h2 {
      padding:  10px;
 }
 h1 {
-    
-	font-family:'blissful';
-	font-weight: 300;
+    font-family:'blissful';
+	text-transform:uppercase;
+	font-weight: 500;
     padding-bottom: 5px;
      text-align:  left;
      border-bottom:  1px solid #999;
-	 font-size: 21px;
-}
+	 font-size: 18px;
+	 letter-spacing:1px;}
 
 
 
@@ -2244,16 +2293,16 @@ html {
 
 .nav-tabs { border-bottom: 2px solid #DDD; }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
-    .nav-tabs > li > a { border: none; color: #666;font-family:'blissful'; }
-        .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; color: #4285F4 !important; background: transparent; }
-        .nav-tabs > li > a::after { content: ""; background: #4285F4; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+    .nav-tabs > li > a { border: none; color: rgba(255,255,255,0.6);;font-family:'blissful'; }
+        .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; color: white !important; background: transparent; }
+        .nav-tabs > li > a::after { content: ""; background: white; height: 4px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
     .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
 .tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
 .tab-pane .contatti {
 	text-align:center;
 }
 .tab-pane .contatti h2, .tab-pane .contatti p{margin:0 0 5px;text-align:center;font-weight:300;}
-.tab-content{padding-left:15px;padding-right:15px;}
+.tab-content{}
 .tab-pane .contatti p{font-style: italic;}
 .tab-pane .contatti a{color:#333;}
 #h2-set{
