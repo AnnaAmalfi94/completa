@@ -192,10 +192,20 @@ color: #04285F !important;
 	background:#ffffe0;
 	text-align:center;
 	margin: 0 0 2em;
+	position: absolute;
+    top: 60px;
+    
+    width: 100%;
+    z-index: 1031;
 }
 
 #provah.error{
-	background:#ffebe8;	
+	background: #ffebe8;
+    color: maroon;
+    
+    font-family: 'blissful';
+    
+    letter-spacing: 1px;
 }
 
 
