@@ -15,7 +15,7 @@
       <div class="container-fluid">
 	  <div style="font-style: italic;color: #777;text-align:center;padding: 7px 0 0 0;font-size:13px;" class="col-xs-4"> <span class="fa fa-calendar"></span> <br> <%= TemplateTags.formatDate(post.date,'d/m/Y') %></div>
  
- <div style="padding: 0px 0 0 0;" class="col-xs-4"> <div style="font-size:13px;font-style: italic;color: #777;text-align:center;"><img style="padding:8px;margin-top:-27px;background-color: transparent;position: relative;" width="55px" height="55px" class="img-circle center-block" src="<%= post.gravatar_image %>"> <span><%= post.author %></span> </div> </div> 
+ <div style="padding: 0px 0 0 0;" class="col-xs-4"> <div style="font-size:13px;font-style: italic;color: #777;text-align:center;"><img style="padding:8px;margin-top:-27px;background-color: #f7f5ee;position: relative;" width="55px" height="55px" class="img-circle center-block" src="<%= post.gravatar_image %>"> <span><%= post.author %></span> </div> </div> 
 	  
 <div style="font-size:13px;font-style: italic;color: #777;text-align:center;padding: 7px 0 0 0;" class="col-xs-4"><span class="glyphicon glyphicon-comment"></span> <br> <%= post.nb_comments %> <% if( post.nb_comments === 1 ){
 print("commento")
