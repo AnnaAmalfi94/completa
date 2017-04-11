@@ -34,8 +34,9 @@ $(document).ready(function () {
 
 
 <div style="z-index:9999;position: relative;" class="search-container">
-    <form id="search-form">
-            <input value="<%= current_search.search_string %>" id="search-field" class="search-field" type="search" /><button id="search-button" class="search-button btn-gradient">Cerca</button>
+    
+	<form id="search-form">
+            <input value="<%= current_search.search_string %>" id="search-field" class="search-field" type="search" /><button id="search-button" class="search-button"><span class="glyphicon glyphicon-search"></span></button>
     </form>
 </div>
 

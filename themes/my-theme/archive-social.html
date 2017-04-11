@@ -37,7 +37,7 @@ $(document).ready(function () {
       <ul style="padding:0; margin-top: -57px;" id="default">
 	  <div style="z-index:9999;position: relative;margin-bottom: 40px;" class="search-container">
     <form id="search-form">
-            <input value="<%= current_search.search_string %>" id="search-field" class="search-field" type="search" /><button id="search-button" class="search-button btn-gradient">Cerca</button>
+            <input value="<%= current_search.search_string %>" id="search-field" class="search-field" type="search" /><button id="search-button" class="search-button"><span class="glyphicon glyphicon-search"></span></button>
     </form>
 </div>
             <% _.each( posts, function( post ){ %>

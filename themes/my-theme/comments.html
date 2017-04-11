@@ -25,12 +25,13 @@
             <span id="icon-com" class="fa fa-pencil"></span> <p style="margin-bottom:20px;"> Nessun commento trovato. <br> Esprimi per primo la tua opinione!</p>
     <% } %>
     <form id="comment-form">
-        <div class="form-group">
-            <label for="comment-content">Aggiungi un commento :</label> 
-            <textarea name="content" cols="45" rows="8" class="form-control" ></textarea>
+        <div style="width:90%;float:left;" class="form-group">
+             
+           <div class="after"> <textarea name="content" cols="45" rows="8" class="form-control1" placeholder="Aggiungi un commento..."></textarea> </div>
         </div>
         <input type="hidden" name="post" value="<%= post.id %>" >
-        <button type="submit" class="btn btn-info btn-gradient mb15">Invia commento</button>
+       
+		<button type="submit" style="margin-top: 2px;background-color: transparent;border: 0;font-size: 32px;float:right;width:10%;" class="fa fa-chevron-circle-right chevron"></button>
     </form>
 </div>
 

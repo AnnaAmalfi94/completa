@@ -20,17 +20,20 @@
          
                                     <!-- Nav tabs -->
                                     <ul style="box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .2), 0 0 15px 0 rgba(0, 0, 0, .3)!important;" class="nav nav-tabs" role="tablist">
-                                        <li style="padding-left:0; padding-right:0; text-align:center;" role="presentation" class="active col-xs-3"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">About</a></li>
+                                        <li style="padding-left:0; padding-right:0;text-align:center;" role="presentation" class="active col-xs-3"><a style="" href="#home" aria-controls="home" role="tab" data-toggle="tab">About</a></li>
                                         <li style="padding-left:0; padding-right:0; text-align:center;" role="presentation" class="col-xs-3"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Portfolio</a></li>
-                                        <li style="padding-left:0; padding-right:0; text-align:center;" role="presentation" class="col-xs-3"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Skill</a></li>
+                                        <li style="padding-left:0; padding-right:0; text-align:center;" role="presentation" class="col-xs-2"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Skill</a></li>
                                         <li style="padding-left:0; padding-right:0; text-align:center;" role="presentation" class="col-xs-3"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Contact</a></li>
-                                    </ul>
+ <li style="padding-left:0; padding-right:0; text-align:left;" class="col-xs-1"><a href="#"><h1 style="line-height:0;margin:0;border:0;color:white;font-weight:500;opacity:0.8;font-size:16px;" class="fa fa-home"></h1></a></li>
+                                                                      
+								   </ul>
 
                                     <!-- Tab panes -->
 									
                                     <div class="tab-content">
-                                        <div role="tabpanel" class="tab-pane active" id="home"> <img class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/header.jpg"> <div class="p20"><img class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/website.png"> <h2>static / dynamic / e-commerce</h2> <p><span class="fsi">Sono una giovane web designer</span><br> Investo continuamente nella mia formazione per offrire servizi sempre migliori.</p> <hr> <h2 class="fs35">Contattami</h2><p>Per maggiori informazioni, per richieste di preventivo e altro, oppure visita il mio sito web: <span class="fsi">www.annaamalfi.it</span></p><div class="col-xs-6"><img class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/numero.png"></div><div class="col-xs-6"><img class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/mail.png"></div><br><br><br><br><br><br><br><br><br></div>
-										<div class="col-md-4 col-md-offset-4">
+                                        <div role="tabpanel" class="tab-pane active" id="home"> <img class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/header.jpg"> <div class="p20"><img class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/website.png"> <h2>static / dynamic / e-commerce</h2> <p><span class="fsi">Sono una giovane web designer</span><br> Investo continuamente nella mia formazione per offrire servizi sempre migliori.</p> <hr> <h2 class="fs35">Contattami</h2><p>Per maggiori informazioni, per richieste di preventivo e altro, oppure visita il mio sito web: <span class="fsi">www.annaamalfi.it</span></p><div class="col-xs-6" style="padding:5px;"><div class="pulsante"><p style="text-align:left;margin:0;"><span class="fa fa-phone c99"></span> +3345388111</p></div></div>
+<div class="col-xs-6" style="padding:5px;"><div class="pulsante"><p style="text-align:left;margin:0;"><span class="fa fa-envelope c99"></span> info@annaamalfi.it</p></div></div><br><br></div>
+										<div class="pf"><div class="col-md-4 col-md-offset-4">
         <div class="material-button-anim">
           <ul class="list-inline" id="options">
             <li class="option">
@@ -54,10 +57,17 @@
           </button>
         </div>
       </div>
+	  <div class="bottom-bar"><div class="col-xs-2"><a href="#" onClick="window.open('http://www.annaamalfi.it/','_system','location=yes');return false;"><span class="fa fa-globe c9"></span></a></div>
+	  <div class="col-xs-2"><a href="#" onClick="window.open('http://www.pinterest.com/annaamalfi/','_system','location=yes');return false;"><span class="fa fa-pinterest c9"></span></a></div>
+	  <div class="col-xs-2"></div>
+	  <div class="col-xs-2"></div>
+	  <div class="col-xs-2"><a href="#" onClick="window.open('http://www.behance.net/annamalfi5c9b/','_system','location=yes');return false;"><img width="28px" src="<%= TemplateTags.getThemePath() %>/img/behance.png"></a></div>
+	  <div class="col-xs-2"><a href="#" onClick="window.open('http://www.twitter.com/annaamalfi/','_system','location=yes');return false;"><span class="fa fa-twitter c9"></span></a></div>
+	  <div class="clearfix"></div></div></div>
 										</div>
 										
-                                        <div role="tabpanel" class="tab-pane p20" id="profile"><!-- Card Projects -->
-        <div class="col-md-6 col-md-offset-3">
+                                        <div role="tabpanel" class="tab-pane" id="profile"><!-- Card Projects -->
+      <div class="p20">  <div class="col-md-6 col-md-offset-3">
             <div class="card">
                 <div class="card-image">
                     <img class="img-responsive" src="<%= TemplateTags.getThemePath() %>/img/item1.png">
@@ -69,7 +79,7 @@
                 </div>
                 
                 <div class="card-action">
-                    <a href="#" onClick="window.open('http://www.conteadidanstef.it/','_system','location=yes');return false;">Vai al sito</a>
+                    <a href="#" onClick="window.open('http://www.conteadidanstef.it/','_system','location=yes');return false;"  class="btn btn-success btn-gradient">Vai al sito</a>
                    
                 </div>
             </div>
@@ -87,7 +97,7 @@
                 </div>
                 
                 <div class="card-action">
-                    <a href="#" onClick="window.open('http://www.maurocangemi.com/','_system','location=yes');return false;">Vai al sito</a>
+                    <a href="#" onClick="window.open('http://www.maurocangemi.com/','_system','location=yes');return false;" class="btn btn-success btn-gradient">Vai al sito</a>
                    
                 </div>
             </div>
@@ -106,7 +116,7 @@
                 </div>
                 
                 <div class="card-action">
-                    <a href="#" onClick="window.open('http://www.elettrosaldi.it/','_system','location=yes');return false;">Vai al sito</a>
+                    <a href="#" onClick="window.open('http://www.elettrosaldi.it/','_system','location=yes');return false;" class="btn btn-success btn-gradient">Vai al sito</a>
                    
                 </div>
             </div>
@@ -125,7 +135,7 @@
                 </div>
                 
                 <div class="card-action">
-                    <a href="#" onClick="window.open('http://www.djeliomilani.it/','_system','location=yes');return false;">Vai al sito</a>
+                    <a href="#" onClick="window.open('http://www.djeliomilani.it/','_system','location=yes');return false;" class="btn btn-success btn-gradient">Vai al sito</a>
                    
                 </div>
             </div>
@@ -144,7 +154,7 @@
                 </div>
                 
                 <div class="card-action">
-                    <a href="#" onClick="window.open('http://www.benellinapoli.com/','_system','location=yes');return false;">Vai al sito</a>
+                    <a href="#" onClick="window.open('http://www.benellinapoli.com/','_system','location=yes');return false;" class="btn btn-success btn-gradient">Vai al sito</a>
                    
                 </div>
             </div>
@@ -154,8 +164,8 @@
 		<br>
 		<br>
 		<br>
-		<br>
-		<div class="col-md-4 col-md-offset-4">
+		<br></div>
+			<div class="pf"><div class="col-md-4 col-md-offset-4">
         <div class="material-button-anim">
           <ul class="list-inline" id="options">
             <li class="option">
@@ -179,10 +189,17 @@
           </button>
         </div>
       </div>
+	  <div class="bottom-bar"><div class="col-xs-2"><a href="#" onClick="window.open('http://www.annaamalfi.it/','_system','location=yes');return false;"><span class="fa fa-globe c9"></span></a></div>
+	  <div class="col-xs-2"><a href="#" onClick="window.open('http://www.pinterest.com/annaamalfi/','_system','location=yes');return false;"><span class="fa fa-pinterest c9"></span></a></div>
+	  <div class="col-xs-2"></div>
+	  <div class="col-xs-2"></div>
+	  <div class="col-xs-2"><a href="#" onClick="window.open('http://www.behance.net/annamalfi5c9b/','_system','location=yes');return false;"><img width="28px" src="<%= TemplateTags.getThemePath() %>/img/behance.png"></a></div>
+	  <div class="col-xs-2"><a href="#" onClick="window.open('http://www.twitter.com/annaamalfi/','_system','location=yes');return false;"><span class="fa fa-twitter c9"></span></a></div>
+	  <div class="clearfix"></div></div></div>
 		</div>
 		
-                                        <div role="tabpanel" class="tab-pane p20" id="messages"><img class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/skill.png"><br><br><br><br><br>
-										<div class="col-md-4 col-md-offset-4">
+                                        <div role="tabpanel" class="tab-pane" id="messages"><img class="img-responsive center-block" src="<%= TemplateTags.getThemePath() %>/img/skill.png"><div class="p20"><h2 id="h2-set">Profilo personale e skills</h2><p>- Ottima conoscenza di Html e Css <br> - Ottima conoscenza del cms Wordpress e plugin <br> - Buona conoscenza di Joomla e Prestashop <br> - Buona conoscenza di Illustrator, Photoshop, Dreamweaver <br> - Ottima capacità impaginazione contenuti <br> - Conoscenza base SEO <br> - Ottima conoscenza del framework Bootstrap <br>- Cura del dettaglio</p></div><br><br><br>
+											<div class="pf"><div class="col-md-4 col-md-offset-4">
         <div class="material-button-anim">
           <ul class="list-inline" id="options">
             <li class="option">
@@ -206,37 +223,53 @@
           </button>
         </div>
       </div>
+	  <div class="bottom-bar"><div class="col-xs-2"><a href="#" onClick="window.open('http://www.annaamalfi.it/','_system','location=yes');return false;"><span class="fa fa-globe c9"></span></a></div>
+	  <div class="col-xs-2"><a href="#" onClick="window.open('http://www.pinterest.com/annaamalfi/','_system','location=yes');return false;"><span class="fa fa-pinterest c9"></span></a></div>
+	  <div class="col-xs-2"></div>
+	  <div class="col-xs-2"></div>
+	  <div class="col-xs-2"><a href="#" onClick="window.open('http://www.behance.net/annamalfi5c9b/','_system','location=yes');return false;"><img width="28px" src="<%= TemplateTags.getThemePath() %>/img/behance.png"></a></div>
+	  <div class="col-xs-2"><a href="#" onClick="window.open('http://www.twitter.com/annaamalfi/','_system','location=yes');return false;"><span class="fa fa-twitter c9"></span></a></div>
+	  <div class="clearfix"></div></div></div>
 										</div>
 										
-                                        <div role="tabpanel" class="tab-pane p20" id="settings"><h2 class="h2-cont">SEGUIMI SU</h2><div class="col-xs-3 plr0"><p class="icon-social"><a href="#" onClick="window.open('http://www.annaamalfi.it/','_system','location=yes');return false;"><span class="fa fa-globe c9"></span><br>sito web</a></p></div>
-<div class="col-xs-3 plr0"><p class="icon-social"><a href="#" onClick="window.open('http://www.twitter.com/annaamalfi/','_system','location=yes');return false;"><span class="fa fa-twitter c9"></span><br>twitter</a></p></div>
-<div class="col-xs-3 plr0"><p class="icon-social"><a href="#" onClick="window.open('http://www.pinterest.com/annaamalfi/','_system','location=yes');return false;"><span class="fa fa-pinterest c9"></span><br>pinterest</a></p></div>
-<div class="col-xs-3 plr0"><p class="icon-social"><a href="#" onClick="window.open('http://www.behance.net/annamalfi5c9b/','_system','location=yes');return false;"><img src="<%= TemplateTags.getThemePath() %>/img/behance.png"><br>behance</a></p></div><div class="clearfix"></div><hr><h2 id="h2-set">Compila il form</h2><p style="text-align:justify;">per porre domande su questa applicazione, per segnalazioni, per diventare scrittore, per informazioni su di me, per richieste di preventivo o altro, oppure contattami via e-mail o telefono (clicca sulle icone in basso).</p>
+                                        <div role="tabpanel" class="tab-pane p20" id="settings"><p style="text-align:justify;margin:0;">per porre domande su questa applicazione, per segnalazioni, per diventare scrittore, per informazioni su di me, per richieste di preventivo e altro.</p>
 										
 										
 									
-				  <form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
+				 	<div style="width:90px;height:90px;" class="user-page"><span style="background-color: #f7f5ee;border-color:#999;color:#999;padding: 15px 15px;" id="user" class="fa fa-envelope"></span></div>
+			
+			 <div style="margin-top:-40px;" class="col-md-6 col-md-offset-3">
+            <div class="card">
+                
+                
+                <div class="card-content">
+                    
+					  <form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
               <div class="form-group">
                 <div class="controls">
-                  <input type="text" id="name" class="form-control" placeholder="Nome" required data-error="Please enter your name">
+				<label>Nome</label>
+                  <input type="text" id="name" class="form-control1" placeholder="Anna_94" required data-error="Please enter your name">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="form-group">		
+                <div class="controls">
+				  <label>Email</label>
+                  <input type="email" class="email form-control1" id="email" placeholder="annamalfi@gmail.com" required data-error="Please enter your email">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="form-group">			   
+                <div class="controls">
+				<label>Oggetto</label>
+                  <input type="text" id="msg_subject" class="form-control1" placeholder="Richiesta informazione" required data-error="Please enter your message subject">
                   <div class="help-block with-errors"></div>
                 </div>
               </div>
               <div class="form-group">
                 <div class="controls">
-                  <input type="email" class="email form-control" id="email" placeholder="Email" required data-error="Please enter your email">
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="controls">
-                  <input type="text" id="msg_subject" class="form-control" placeholder="Oggetto" required data-error="Please enter your message subject">
-                  <div class="help-block with-errors"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="controls">
-                  <textarea id="message" rows="7" placeholder="Messaggio" class="form-control" required data-error="Write your message"></textarea>
+				<label>Messaggio</label>
+                  <textarea id="message" rows="7" placeholder="Questo è un testo segnaposto. Esplicita qui la tua richiesta" class="form-control1" required data-error="Write your message"></textarea>
                   <div class="help-block with-errors"></div>
                 </div>  
               </div>
@@ -246,32 +279,15 @@
               <div class="clearfix"></div>   
 
             </form>  
-<br>
-<br>
-<br>
-<br>
-<div class="material-button-anim1">
-          <ul class="list-inline" id="options">
-            <li class="option">
-              <button class="material-button option1" type="button">
-                <a style="color:white;" href="tel:+393345388111"><span class="fa fa-phone" aria-hidden="true"></span></a>
-              </button>
-            </li>
-            <li class="option">
-              <button class="material-button option2" type="button">
-               <a style="color:white;" href="mailto:annamalfi@gmail.com"><span class="fa fa-envelope-o" aria-hidden="true"></span></a>
-              </button>
-            </li>
-            <li class="option">
-              <button class="material-button option3" type="button">
-                <span class="fa fa-globe" aria-hidden="true"></span>
-              </button>
-            </li>
-          </ul>
-          <button class="material-button material-button-toggle" type="button">
-            <span class="fa fa-plus" aria-hidden="true"></span>
-          </button>
+			
+					
+					
+                </div>
+                
+               
+            </div>
         </div>
+
 
 
 
