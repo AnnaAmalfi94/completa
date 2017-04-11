@@ -279,6 +279,8 @@ $("#hormenu").removeClass('bcb');
 App.addCustomRoute( 'my-page-route', 'my-page-template' ); 
  App.addCustomRoute( 'reg', 'reg-template' );
  App.addCustomRoute( 'faq', 'faq-template' );
+ App.addCustomRoute( 'info', 'info-template' );
+ App.addCustomRoute( 'policy', 'policy-template' );
 App.filter( 'template-args', function( template_args, view_type, view_template ) { 
 	if( view_template == 'my-page-template' ) {
 		$('#class-search,#refresh-button').css({
@@ -293,6 +295,16 @@ $( '#meiu' ).hide();
 	
 		}
 		if( view_template == 'faq-template' ) {
+		$('#class-search,#refresh-button').css({
+		 "display": "none"    
+	  });	
+		}
+		if( view_template == 'info-template' ) {
+		$('#class-search,#refresh-button').css({
+		 "display": "none"    
+	  });	
+		}
+		if( view_template == 'policy-template' ) {
 		$('#class-search,#refresh-button').css({
 		 "display": "none"    
 	  });	

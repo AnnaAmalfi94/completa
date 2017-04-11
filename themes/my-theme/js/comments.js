@@ -21,7 +21,7 @@ define( [ 'jquery', 'core/theme-app', 'core/modules/comments' ], function( $, Ap
 		e.preventDefault();
 		
 		var $submit_button = $( '#comment-form [type="submit"]' );
-		$submit_button.attr( 'disabled', 'disabled' ).text( 'Sending...' );
+		$submit_button.attr( 'disabled', 'disabled' ).text( '' );
 		
 		var comment = {
 			content : $( '#comment-form [name="content"]' ).val(),
@@ -51,7 +51,7 @@ define( [ 'jquery', 'core/theme-app', 'core/modules/comments' ], function( $, Ap
 			},
 			function( error ) {
 				//Reset submit button :
-				$submit_button.removeAttr( 'disabled' ).text( 'Submit comment' );
+				$submit_button.removeAttr( 'disabled' ).text( '' );
 				
 				//Scroll top so that we can see the feedback message that comes up through theme error handling. 
 				window.scrollTo( 0, 0 );

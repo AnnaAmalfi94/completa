@@ -28,7 +28,7 @@ define( [ 'jquery', 'core/theme-app', 'core/modules/authentication' ], function(
 			var user = Auth.getCurrentUser();
 			if ( !user ) {
 				alert('devi loggarti per accedere alla chat');
-				App.navigate( '#' );
+				App.navigate( '#login-page' );
 				redirect = true;
 			}
 		}
