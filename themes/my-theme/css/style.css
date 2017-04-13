@@ -807,6 +807,8 @@ font-style:oblique;
 	width:100%;
 }
 
+
+
 #contactForm .form-control1{
 	border:0 !important;
 	border-bottom:1px solid #999 !important;
@@ -825,7 +827,7 @@ color:#999 !important;
 .pulsante{
 	border-radius: 3px;
     background-color: white;
-    padding: 5px;
+    padding: 5px 20px 5px 20px;
     width:100%;
 }
 
