@@ -1163,18 +1163,34 @@ a:active {
 .comment-top{
 	position: fixed;
     z-index: 1033;
-    top: 10px;
+    top: 2px;
     left: 45px;
     font-size: 21px;
 	color:white;
+	padding:5px;
 }
+
+
+.comment-top:hover{
+	
+	opacity:0.3;
+	
+	}
+	
+	
+	
+	.cond-top:hover{
+	
+	opacity:0.3;
+	
+	}
 
 
 .cond-top{
 	position: fixed;
     z-index: 1033;
     top: 8px;
-    right: 36px;
+    right: 41px;
     font-size: 21px;
 	color:white;
 	width:18px;
