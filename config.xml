@@ -60,6 +60,6 @@
 	<gap:splash src="splashscreens/splashscreen-wp-appkit-hdpi.9.png" gap:platform="android" gap:qualifier="hdpi" />
 	<gap:splash src="splashscreens/splashscreen-wp-appkit-xhdpi.9.png" gap:platform="android" gap:qualifier="xhdpi" />
 	<gap:splash src="splashscreens/splashscreen-wp-appkit-xxhdpi.9.png" gap:platform="android" gap:qualifier="xxhdpi" />
-	<gap:splash src="splashscreens/splashscreen-wp-appkit-xxxhdpi.9.png" gap:platform="android" gap:qualifier="xxxhdpi" />
+	<gap:splash src="splashscreens/newsweb.9.png" gap:platform="android" gap:qualifier="xxxhdpi" />
 	
 </widget>
