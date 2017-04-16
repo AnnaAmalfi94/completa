@@ -222,7 +222,7 @@ display:none;
 
 .c99{
 	color:#999;
-	margin-right:5px;
+	margin-right:15px;
 	font-size:16px;
 }
 
@@ -347,7 +347,7 @@ div#hormenu li ul li:hover{background-color:#DBDCDD;
 	color: white;
     margin-top: 10px;
     font-family: 'Courgette', cursive;
-    font-size: 19px;
+    font-size: 21px;
 	
 }
 
@@ -409,7 +409,7 @@ div#hormenu li ul li:hover{background-color:#DBDCDD;
 	
 background-image:url('../img/ultimi.png');
 background-repeat: no-repeat;
-padding-left: 25px;
+padding-left: 30px;
 margin-top:10px;
 background-position: center left;
 }
@@ -417,14 +417,14 @@ background-position: center left;
 #app-menu li:nth-child(2){
 	background-image:url('../img/tech.png');
 	background-repeat: no-repeat;
-padding-left: 25px;
+padding-left: 30px;
 background-position: center left;
 }
 
 #app-menu li:nth-child(3){
 	background-image:url('../img/web.png');
 	background-repeat: no-repeat;
-padding-left: 25px;
+padding-left: 30px;
 background-position: center left;
 }
 
@@ -433,7 +433,7 @@ background-position: center left;
 #app-menu li:nth-child(4){
 	background-image:url('../img/social.png');
 	background-repeat: no-repeat;
-padding-left: 25px;
+padding-left: 30px;
 background-position: center left;
 }
 
@@ -2453,12 +2453,12 @@ html {
 .tab-pane .contatti p{font-style: italic;}
 .tab-pane .contatti a{color:#333;}
 #h2-set{
-	font-family: 'Tangerine';
+	font-family: 'Open Sans', sans-serif;
     color: #2A2B2B;
-    font-weight: 900;
+    font-weight: 600;
     
-    font-size: 30px;
-    margin: 0px 0 0px;
+    font-size: 18px;
+    margin: 0px 0 5px;
 }
 .h2-cont{
 	margin:0 0 10px 0;
@@ -2545,6 +2545,7 @@ text-decoration:underline;
 position:fixed;
 	bottom:0;
 width:100%;	
+box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .2);
 }
 
 
