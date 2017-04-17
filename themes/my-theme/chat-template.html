@@ -167,9 +167,9 @@ function remove_el(image) {
         },
         presence: function(m){
             if(m.occupancy > 1) {
-                presence.textContent = '&nbsp;-&nbsp;' + m.occupancy + '&nbsp;(persone online)';
+                presence.textContent = ' - ' + m.occupancy + ' persone online';
             } else {
-                presence.textContent = '&nbsp;- (Solo tu sei online)';
+                presence.textContent = ' - (Solo tu sei online)';
             }
         }
     });
