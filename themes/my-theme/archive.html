@@ -28,7 +28,7 @@ $(document).ready(function () {
 
 <div class="spazioo"></div>
 
-<div style="width:100%;margin-bottom:20px;border-bottom: 1px solid #DDD;font-size: 14px;color: #666;background-color:#4285F4;box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .2), 0 0 15px 0 rgba(0, 0, 0, .3)!important;">
+<div style="width:100%;margin-bottom:0px;border-bottom: 1px solid #DDD;font-size: 14px;color: #666;background-color:#4285F4;box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .2), 0 0 15px 0 rgba(0, 0, 0, .3)!important;">
 <div style="float:left;" class="container-fluid">
 <h1 style="border:0;color:white;font-weight:500;opacity:0.8;"> <%= list_title %> </h1></div> <div style="float:right;" class="container-fluid"><h1 style="border:0;color:white;font-weight:500;opacity:0.8;"> (<%= total %>) </h1></div><div class="clearfix"></div></div>
 
@@ -40,9 +40,9 @@ $(document).ready(function () {
     </form>
 </div>
 
-
+<div id="pane">
 <% if( posts.length ){ %>
-      <ul style="padding:0;">
+      <ul id="" style="padding:0;">
             <% _.each( posts, function( post ){ %>
                   <% var nb_comments = post.nb_comments %>
 				  
@@ -50,25 +50,32 @@ $(document).ready(function () {
 				  
                   <li style="margin-bottom:20px;background-color:white;">
 				  <div class="container-fluid">
-				  <table class=""><tr><th style="padding-right:5px;padding-top:5px;">
+				  <div style="" class="foto">
 				  <% if( post.thumbnail.src && post.thumbnail.src.length ){ %>
-						 <a href="<%= TemplateTags.getPostLink(post.id) %>"><div class="icon-comment"><%= nb_comments %></div><img class="media-object" style="border-radius: 5px;width: 100px; height: auto;margin-top: -17px;z-index: 1034;" src="<%= post.thumbnail.src %>"></a>
+						 <a href="<%= TemplateTags.getPostLink(post.id) %>"><div class="icon-comment"><%= nb_comments %></div><img class="media-object fotoo" style="" src="<%= post.thumbnail.src %>"></a>
 					<% } %>	
-					  <span style="color:#777;font-size:12px;font-weight:600;"><span class="fa fa-calendar">
+					  <span id="pasta" style="color:#777;font-size:12px;font-weight:600;"><span class="fa fa-calendar">
                </span>&nbsp;<%= TemplateTags.formatDate(post.date,'d/m/Y') %></span>
-					</th>
-					<th style="padding-left:5px;padding-top:8px;padding-right:10px;" class="angolo">
+					</div>
+					<div style="" class="angolo testo">
                         <h2 style="padding:0;margin:0;">
                               <a href="<%= TemplateTags.getPostLink(post.id) %>"><%= post.title %></a>                        
                         </h2>
+						<div class="dn">  <span style="color:#777;font-size:12px;font-weight:600;"><span class="fa fa-calendar">
+               </span>&nbsp;<%= TemplateTags.formatDate(post.date,'d/m/Y') %></span> - <span style="color:#777;font-size:12px;font-weight:600;"><span class="glyphicon glyphicon-comment"></span>&nbsp; <%= nb_comments %>&nbsp; <% if( post.nb_comments === 1 ){
+print("commento")
+}
+else {
+print("commenti")
+
+} %></span></div>
 						<p style="margin:0;font-style:italic;font-size:13px;"><%= post.excerpt %></p>
 						
 						
 
-</th>
-</tr>
-</table>           				 
-				 
+</div>
+           				 
+			<div class="clearfix"></div>	 
 				 
 				</div>     
 				 </li>
@@ -78,7 +85,7 @@ $(document).ready(function () {
 <% }else{ %>
       <p>No post found!</p>
 <% } %>
-
+</div>
 
   <div class="cerchio"><a href="#chat"><span style="color:white;" class="fa fa-comments-o fs22"></span></a></div>
 
