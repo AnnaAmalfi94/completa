@@ -22,6 +22,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', end
 
 
 
+.navbar-header{
+	width:100%;
+}
+
+
+.mt-57{
+	margin-top:-57px;
+	padding:0;
+}
+
+
+@media (min-width:1020px){
+	.mt-57{
+	margin-top:-127px;
+	padding:0;
+}
+}
+
+
+@media (min-width:1118px){
+	.mt-57{
+	margin-top:-187px;
+	padding:0;
+}
+}
+
+
+
+
+
 
 .casa:active{
 	color:#04285F;
@@ -2324,7 +2354,7 @@ html {
 }
 .sidebar .sidebar-nav li {
     position:  relative;
-	padding:5px;
+	padding:8px;
      list-style-type:  none;
 }
 .sidebar .sidebar-nav li a {
