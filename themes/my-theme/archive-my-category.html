@@ -34,13 +34,13 @@ $(document).ready(function () {
 
 	});
 </script>
-<img class="img-responsive" src="<%= TemplateTags.getThemePath() %>/img/bg1.jpg">
+<img style="width:100%;" class="img-responsive" src="<%= TemplateTags.getThemePath() %>/img/bg1.jpg">
 <div class="container-fluid">
 
 <div class="spazioo"></div>
 
 <% if( posts.length ){ %>
-      <ul style="padding:0; margin-top: -57px;" id="default">
+      <ul class="mt-57" id="default">
 	  <div style="z-index:9999;position: relative;margin-bottom: 40px;" class="search-container">
     <form id="search-form">
             <input value="<%= current_search.search_string %>" id="search-field" class="search-field" type="search" /><button id="search-button" class="search-button"><span class="glyphicon glyphicon-search"></span></button>
@@ -48,7 +48,7 @@ $(document).ready(function () {
 </div>
             <% _.each( posts, function( post ){ %>
                   <% var nb_comments = post.nb_comments %>
-                  <li style="margin-bottom:20px;" class="col-xs-6">
+                  <li style="margin-bottom:20px;" class="col-xs-6 col-sm-4">
 				  <div style="padding:5px;background-color:white;border-radius:5px">
 				  <% if( post.thumbnail.src && post.thumbnail.src.length ){ %>
 						 <a href="<%= TemplateTags.getPostLink(post.id) %>"><div class="icon-comment archiv-social"><%= nb_comments %></div><img class="media-object pull-left" style="width: 100%; height: auto; margin-bottom:5px;margin-top: -39px;border-radius: 5px;" src="<%= post.thumbnail.src %>"></a>

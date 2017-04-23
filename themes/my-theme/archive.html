@@ -52,7 +52,7 @@ $(document).ready(function () {
 				  <div class="container-fluid">
 				  <div style="" class="foto">
 				  <% if( post.thumbnail.src && post.thumbnail.src.length ){ %>
-						 <a href="<%= TemplateTags.getPostLink(post.id) %>"><div class="icon-comment"><%= nb_comments %></div><img class="media-object fotoo" style="" src="<%= post.thumbnail.src %>"></a>
+						 <a href="<%= TemplateTags.getPostLink(post.id) %>"><div class="icon-comment"><%= nb_comments %></div><img class="media-object fotoo img-responsive center-block" style="" src="<%= post.thumbnail.src %>"></a>
 					<% } %>	
 					  <span id="pasta" style="color:#777;font-size:12px;font-weight:600;"><span class="fa fa-calendar">
                </span>&nbsp;<%= TemplateTags.formatDate(post.date,'d/m/Y') %></span>
